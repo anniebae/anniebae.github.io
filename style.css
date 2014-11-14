@@ -15,6 +15,18 @@ h2 {
 	font-family: Snell Roundhand;
 }
 
+.nav-bar {
+	position: -webkit-sticky;
+	margin: -1em -1em 15px -1em;
+}
+
+li {
+	padding: 0 20px;
+}
+
+ul {
+	text-align: right;
+}
 
 /* visited link */
 a {
