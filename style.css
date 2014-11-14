@@ -1,24 +1,29 @@
-    body {
-	  	text-align: center;
-	  	background: url("http://38.media.tumblr.com/tumblr_mby2vv5Bpo1r8wl6ro1_500.jpg");
-	  	background-size: cover;
-	  	background-position: center;
-	  	color: black;
-	  	font-family: avenir;
-	  }
+body {
+	text-align: center;
+ 	color: black;
+ 	font-family: avenir;
+ }
 
-	  a:link {
-    color: #ffffff;
-     }
+.profile {
+	height: 300px;
+	width: 300px;
+	border-radius: 150px;
+  border: 1px solid rgb(178, 178, 178);
+}
+
+h2 {
+	font-family: Snell Roundhand;
+}
+
 
 /* visited link */
-a:visited {
-    color: #000000;
+a {
+	color: #000000;
 }
 
 /* mouse over link */
 a:hover {
-    color: #e6e6e6;
+    color: #ffffff;
 }
 
 /* selected link */
