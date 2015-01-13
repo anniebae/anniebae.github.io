@@ -22,6 +22,32 @@ $(document).ready(function(){
 
   $('.carousel').carousel({
         interval: 3000
-    })
+    });
+
+
+  $('#projects-tab').on('click', function() {
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+$('#resume-tab').on('click', function() {
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('#photography-tab').on('click', function() {
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('#contacts-tab').on('click', function() {
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+  });
+
+
+
 
 });
+
+
