@@ -28,6 +28,7 @@ $(document).ready(function(){
   $('#projects-tab').on('click', function() {
     $(this).parent().find('li.active').removeClass('active');
     $(this).addClass('active');
+    $('#projects').scrollTop();
   });
 
 $('#resume-tab').on('click', function() {
