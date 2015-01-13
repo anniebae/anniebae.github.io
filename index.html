@@ -1,23 +1,131 @@
 <!DOCTYPE html>
-<link href="style.css" rel="stylesheet">
+<html lang="en">
 <head>
-	<title>Annie Bae</title>
-</head>
-  
-<body>
-<header>
-	<div class="nav-bar">
-	<ul>
-		<li><a href="about.html">About Me</a></li>
-		<li><a href="previous_experience.html">Previous Experience</a></li>
-		<li><a href="contact.html">Contact Info.</a></li>
-	</ul>
+  <meta charset="UTF-8">
+  <title>Annie Bae</title>
+
+  <link rel="stylesheet" href="javascripts/bootstrap.js">
+  <link rel="stylesheet" href="javascripts/jquery.js">
+  <link rel="stylesheet" href="javascripts/main.js">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+  <div class="container">
+
+  <a href="/"><img src="images/anniebae.png" class="anniebae" alt=""></a>
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav" id="menu-ul">
+        <li class="menu-item"><a href="#projects">PROJECTS</a></li>
+        <li class="menu-item"><a href="#resume">RESUME</a></li>
+        <li class="menu-item"><a href="#photography">PHOTOGRAPHY</a></li>
+        <li class="menu-item"><a href="#contact">CONTACTS</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
 </div>
-	<h1>Annie Bae</h1>
-</header>
-<article>
-	<img src="https://pbs.twimg.com/profile_images/523716388418883584/ZrOTW3sp.jpeg" class="profile">
 
-</article>
 
+
+</head>
+<body>
+  
+  <div class="index-wrapper">
+    <img src="images/backdrop.jpg" class="backdrop" alt="">
+  </div>
+
+
+<!-- PROJECT DIV -->
+  <div id="projects">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Project 1: RESTaurant</h3>
+          <div class="project-photo">
+            <img src="images/RESTaurant.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 4 of 12:
+                <br>
+                CRUD application for waitstaff to manage food orders.
+              </p>
+            </div>
+          </div>
+        <a href="https://wdi-restaurant.herokuapp.com/" target="_blank" class="btn btn-default" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Project 2: Whiskers</h3>
+          <div class="project-photo">
+            <img src="images/whiskers.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 7 of 12:
+                <br>
+                Game modeled after hangman.
+              </p>
+            </div>
+          </div>  
+        <a href="https://wdi-whiskers.herokuapp.com/" class="btn btn-default" target="_blank">Check it out</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">      
+        <h3>Project 3: Hike</h3>
+          <div class="project-photo">
+            <img src="images/hike.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 9 of 12:
+                <br>
+                Location-based hike-finder developed as part of a group.
+              </p>          
+            </div>
+          </div>
+        <a href="http://wdi-hike.herokuapp.com/" class="btn btn-default" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Project 4: Basic</h3>
+          <div class="project-photo">
+            <img src="images/basic.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                FINAL PROJECT:
+                <br>
+                Web application that measures how "basic" one is by utilizing Instagram's API.
+              </p>
+            </div>
+          </div>
+        <a href="https://wdi-basic.herokuapp.com/" class="btn btn-default" target="_blank">Check it out</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- RESUME DIV -->
+<div id="resume">
+  <img src="images/resume.png" class="resume-img"alt="">
+
+<div id="resume-button">
+
+  <input type="button" value="My Resume (pdf)" class="btn btn-large btn-default" onclick="window.open('images/AnnieBae.pdf', '_blank')">
+
+</div>
+
+</div>
+  
 </body>
+</html>
