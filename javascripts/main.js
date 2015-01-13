@@ -20,4 +20,8 @@ $(document).ready(function(){
     $('.project-caption', this).stop(true, true).hide();
   });
 
+  $('.carousel').carousel({
+        interval: 3000
+    })
+
 });
