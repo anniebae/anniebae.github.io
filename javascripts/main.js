@@ -20,4 +20,4 @@ $(document).ready(function(){
     $('.project-caption', this).stop(true, true).hide();
   });
 
-})
+});
