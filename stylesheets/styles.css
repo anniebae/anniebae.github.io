@@ -150,10 +150,11 @@ h3 {
 .resume-img {
   width: 60%;
   margin-left: 18%;
+  opacity: 0.5;
 }
 
 .resume-img:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #resume {
