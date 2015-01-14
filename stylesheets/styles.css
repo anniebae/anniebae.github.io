@@ -38,6 +38,24 @@ h3 {
 }
 
 
+.social-media-icon {
+  display: inline-block;
+  float: right;
+  opacity: 0.3;
+}
+
+.social-media-icon:hover {
+  opacity: 1;
+}
+
+#social-media-ul {
+  margin-right: 1.5%;
+}
+
+#social-media-ul li {
+  margin: 0 3px 0;
+}
+
 #menu-item {
   padding-right: 30px;
 }
