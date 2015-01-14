@@ -20,15 +20,11 @@ $(document).ready(function(){
     $('.project-caption', this).stop(true, true).hide();
   });
 
-  $('.carousel').carousel({
-        interval: 3000
-    });
 
 
   $('#projects-tab').on('click', function() {
     $(this).parent().find('li.active').removeClass('active');
     $(this).addClass('active');
-    $('#projects').scrollTop();
   });
 
 $('#resume-tab').on('click', function() {
