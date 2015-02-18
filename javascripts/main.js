@@ -40,7 +40,7 @@ $(function() {
     $(this).addClass('active');
   });
 
-  $('body').scrollspy({ target: '.navbar' })
+  $('body').scrollspy({ target: '.navbar' });
 
 });
 
