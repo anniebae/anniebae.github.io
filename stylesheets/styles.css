@@ -186,14 +186,46 @@ h4 {
   margin: 25% auto;
 }
 
-.resume-img {
-  width: 60%;
-  margin-left: 18%;
-  opacity: 0.5;
+#resume {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  padding-top: 200px;
 }
 
-.resume-img:hover {
-  opacity: 1;
+.resume-img {
+  height: 500px;
+  width: 400px;
+}
+
+.resume-photo {
+  position: relative;
+  margin: auto;
+  width: 400px;
+}
+
+.resume-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  background-color: lightgrey;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+/*.resume-img {
+  width: 25%;
+  margin-left: 37%;
+}
+
+.resume-wrapper {
+  width: 25%;
+  margin-left: 37%;
+  background-color: red;
+  z-index: 5;
 }
 
 #resume {
@@ -202,10 +234,11 @@ h4 {
   padding-top: 200px;
 }
 
+
 #resume-button {
   margin-left: 43%;
   padding-top: 1%;
-}
+}*/
 
 .carousel-indicators {
   left: 42%;
