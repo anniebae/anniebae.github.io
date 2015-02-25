@@ -216,29 +216,19 @@ h4 {
   text-align: center;
 }
 
-/*.resume-img {
-  width: 25%;
-  margin-left: 37%;
+.resume-text {
+  width: 50%;
+  margin: auto;
+  margin-top: 35%;
+  margin-bottom: 5%;
 }
 
-.resume-wrapper {
-  width: 25%;
-  margin-left: 37%;
-  background-color: red;
-  z-index: 5;
+.btn {
+  border: 3px solid black;
+  background-color: transparent;
+  border-radius: 0px;
+  color: black;
 }
-
-#resume {
-  margin-top: 200px;
-  margin-bottom: 50px;
-  padding-top: 200px;
-}
-
-
-#resume-button {
-  margin-left: 43%;
-  padding-top: 1%;
-}*/
 
 .carousel-indicators {
   left: 42%;
