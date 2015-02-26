@@ -1,4 +1,13 @@
 $(function() {
+  $('.carousel').carousel({
+    interval: 5000
+  });
+
+  $('.project-photo').hover(function(){
+    $('.project-caption', this).stop(true, true).slideDown("normal");
+  }, function(){
+    $('.project-caption', this).stop(true, true).hide();
+  });
 
   // $('.anniebae').mouseenter(function(){
   //   $(this).animate({

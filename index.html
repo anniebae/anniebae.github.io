@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/"><h1>annie<b>BAE</b></h1></a>
+      <a href="#"><h1>annie<b>BAE</b></h1></a>
     </div>
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -37,48 +37,145 @@
 </head>
 <body>
 
+
+<!--   MAIN TEMPLATE -->
   <div id="main-wrapper">
-    
     <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#main-carousel" data-slide-to="1"></li>
-    <li data-target="#main-carousel" data-slide-to="2"></li>
-  </ol>
- 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/backdrop1.jpg" class="main-img">
-    </div>
-    <div class="item">
-      <img src="images/backdrop2.jpg" class="main-img">
-    </div>
-    <div class="item">
-      <img src="images/backdrop3.jpg" class="main-img">
+      <ol class="carousel-indicators">
+        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#main-carousel" data-slide-to="1"></li>
+        <li data-target="#main-carousel" data-slide-to="2"></li>
+      </ol>
+     
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/backdrop1.jpg" class="main-img">
+        </div>
+        <div class="item">
+          <img src="images/backdrop2.jpg" class="main-img">
+        </div>
+        <div class="item">
+          <img src="images/backdrop3.jpg" class="main-img">
+        </div>
+      </div>
+     
+      <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+        <img src="images/chevron-left.png">
+      </a>
+      <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+        <img src="images/chevron-right.png">
+      </a>
     </div>
   </div>
- 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
-    <img src="images/chevron-left.png">
-  </a>
-  <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
-    <img src="images/chevron-right.png">
-  </a>
-</div> <!-- Carousel -->
-
-<script>
-  $('.carousel').carousel({
-    interval: 5000,
-    mode: fade
-  });
-</script>
 
 
+<div id="projects-wrapper">
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <h4>Project 1: RESTaurant</h4>
+          <div class="project-photo">
+            <img src="images/RESTaurant.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 4 of 12:
+                <br>
+                CRUD application for waitstaff to manage food orders.
+              </p>
+            </div>
+          </div>
+        <a href="https://wdi-restaurant.herokuapp.com/" target="_blank" class="btn btn-default btn-xs" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <h4>Project 2: Whiskers</h4>
+          <div class="project-photo">
+            <img src="images/whiskers.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 7 of 12:
+                <br>
+                Game modeled after hangman.
+              </p>
+            </div>
+          </div>  
+        <a href="https://wdi-whiskers.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">      
+        <h4>Project 3: Hike</h4>
+          <div class="project-photo">
+            <img src="images/hike.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                In week 9 of 12:
+                <br>
+                Location-based hike-finder developed as part of a group.
+              </p>          
+            </div>
+          </div>
+        <a href="http://wdi-hike.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <h4>Project 4: Basic</h4>
+          <div class="project-photo">
+            <img src="images/basic.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                FINAL PROJECT:
+                <br>
+                Web application that measures how "basic" one is by utilizing Instagram's API.
+              </p>
+            </div>
+          </div>
+        <!-- <a href="https://wdi-basic.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">Check it out</a> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <h4>Portfolio</h4>
+          <div class="project-photo">
+            <img src="images/portfolio.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                Personal Webpage:
+                <br>
+                Single page built with HTML, CSS, JavaScript, and jQuery.
+              </p>
+            </div>
+          </div>
+        <a href="http://anniebae.com/" class="btn btn-default btn-xs" target="_blank">Check it out</a>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <h4>I x 4</h4>
+          <div class="project-photo">
+            <img src="images/Ix4.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                 Implemented parallax scrolling effects with Stellar.js.
+              </p>
+            </div>
+          </div>
+        <a href="http://104.236.211.223/" class="btn btn-default btn-xs" target="_blank">Check it out</a>  
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <h4>Travelography</h4>
+          <div class="project-photo">
+            <img src="images/travelography.png" class="project-img" alt="">
+            <div class="project-caption">
+              <p class="project-text">
+                Single page app built in Backbone.js. [A compilation of photos I took while traveling.]
+              </p>
+            </div>
+          </div>
+        <a href="http://anniebae.me/" class="btn btn-default btn-xs" target="_blank">Check it out</a>  
+      </div>
+
+    </div>
   </div>
-
 
 
 
