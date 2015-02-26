@@ -26,10 +26,10 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a id="projects" href="#">PROJECTS</a></li>
-        <li><a id="resume" href="#">RESUME</a></li>
-        <li><a id="photography" href="#">PHOTOGRAPHY</a></li>
-        <li><a id="contacts" href="#">CONTACTS</a></li>
+        <li id="projects-tab"><a id="projects" href="#projects">PROJECTS</a></li>
+        <li id="resume-tab"><a id="resume" href="#resume">RESUME</a></li>
+        <li id="photography-tab"><a id="photography" href="#photography">PHOTOGRAPHY</a></li>
+        <li id="contacts-tab"><a id="contacts" href="#contacts">CONTACTS</a></li>
       </ul>
     </div>
   </nav>
@@ -38,7 +38,43 @@
 <body>
 
   <div id="main-wrapper">
-    <img src="images/backdrop.jpg" class="backdrop">
+    
+    <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#main-carousel" data-slide-to="1"></li>
+    <li data-target="#main-carousel" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/backdrop1.jpg" class="main-img">
+    </div>
+    <div class="item">
+      <img src="images/backdrop2.jpg" class="main-img">
+    </div>
+    <div class="item">
+      <img src="images/backdrop3.jpg" class="main-img">
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+  </a>
+  <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+  </a>
+</div> <!-- Carousel -->
+
+<script>
+  $('.carousel').carousel({
+    interval: 5000,
+    mode: fade
+  });
+</script>
+
+
   </div>
 
 
