@@ -9,6 +9,12 @@ $(function() {
     $('.project-caption', this).stop(true, true).hide();
   });
 
+  $('.resume-photo').hover(function(){
+    $('.resume-caption', this).stop(true, true).slideDown("normal");
+  }, function(){
+    $('.resume-caption', this).stop(true, true).hide();
+  });
+
   // $('.anniebae').mouseenter(function(){
   //   $(this).animate({
   //     height: "85px",
