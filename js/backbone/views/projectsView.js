@@ -5,8 +5,7 @@ var ProjectsView = Backbone.View.extend({
     this.render();
   },
   events: {
-    'mouseenter .project-photo'  : 'showCaption',
-    'mouseleave .project-caption-show' : 'hideCaption'
+    'mouseenter .project-photo'  : 'showCaption'
   },
   render: function() {
     this.$el.html(this.projectsTemplate());

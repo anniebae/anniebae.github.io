@@ -33,7 +33,7 @@ var AppView = Backbone.View.extend({
     var projectsView = new ProjectsView();
   },
   showResume: function() {
-    $('#body').html(this.resumeTemplate());
+    var resumeView = new ResumeView();
   },
   showPhotography: function() {
     $('#body').html(this.photographyTemplate());
