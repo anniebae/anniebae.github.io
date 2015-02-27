@@ -1,6 +1,7 @@
 var AppView = Backbone.View.extend({
   el: "#logo-navbar",
   logoNavbarTemplate: _.template($("#logo-navbar-template").html()),
+  connectTemplate: _.template($("#connect-template").html()),
   mainTemplate: _.template($('#main-template').html()),
   projectsTemplate: _.template($("#projects-template").html()),
   resumeTemplate: _.template($("#resume-template").html()),
@@ -9,6 +10,7 @@ var AppView = Backbone.View.extend({
   initialize: function(){
     this.renderLogoNavbar();
     this.showMain();
+    this.renderConnect();
   },
   events: {
     'click #main-btn'        : 'showMain',
@@ -20,6 +22,9 @@ var AppView = Backbone.View.extend({
   renderLogoNavbar: function() {
     this.$el.html(this.logoNavbarTemplate());
     return this;
+  },
+  renderConnect: function() {
+    $('#connect').html(this.connectTemplate());
   },
   showMain: function() {
     this.renderLogoNavbar();

@@ -25,6 +25,7 @@ a {
 
 a:hover {
   color: red;
+  text-decoration: none;
 }
 
 .navbar {
@@ -235,6 +236,7 @@ a:hover {
 #contacts-wrapper {
   width: 80%;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 
