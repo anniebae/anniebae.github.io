@@ -7,6 +7,10 @@ h1 {
   font-family: 'Poiret One';
 }
 
+h3 {
+  font-family: 'Poiret One';
+}
+
 h1:hover {
   text-decoration: none;
 }
@@ -84,6 +88,28 @@ a:hover {
   z-index: 2;
 }
 /********************************* MAIN STYLE *********************************/
+
+/********************************* SOCIAL MEDIA STYLE *********************************/
+#social-media-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#social-media-ul li {
+  display: inline-block;
+  float: right;
+  opacity: 0.3;
+}
+
+/*.social-media-icon {
+  display: inline-block;
+}*/
+
+.social-media-icon:hover {
+  opacity: 1;
+}
+/********************************* SOCIAL MEDIA STYLE *********************************/
+
 
 /********************************* PROJECTS STYLE *********************************/
 #projects-wrapper {
