@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: lightgrey;
+  color: red;
 }
 
 .navbar {
@@ -47,6 +47,14 @@ a:hover {
 .navbar-default .navbar-nav > li > a:hover {
   border-bottom: 1px solid red;
   color: red;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: white;
+  color: red;
+  border-bottom: 1px solid red;
 }
 
 /********************************* MAIN STYLE *********************************/
@@ -96,17 +104,21 @@ a:hover {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 #social-media-ul li {
   display: inline-block;
-  float: right;
-  opacity: 0.3;
 }
 
-/*.social-media-icon {
-  display: inline-block;
-}*/
+#social-media-ul {
+  float: right;
+  margin: 5%;
+}
+
+.social-media-icon {
+  opacity: 0.3;
+}
 
 .social-media-icon:hover {
   opacity: 1;
@@ -140,7 +152,7 @@ a:hover {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: lightgrey;
+  background-color: red;
   opacity: 0.9;
   text-align: center;
   font-size: 13px;
@@ -178,7 +190,7 @@ a:hover {
   left: 0;
   z-index: 3;
   display: none;
-  background-color: lightgrey;
+  background-color: red;
   opacity: 0.9;
   height: 100%;
   width: 100%;
