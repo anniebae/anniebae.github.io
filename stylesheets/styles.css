@@ -155,7 +155,8 @@ a:hover {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: grey;
+  color: white;
   opacity: 0.9;
   text-align: center;
   font-size: 13px;
@@ -193,7 +194,8 @@ a:hover {
   left: 0;
   z-index: 3;
   display: none;
-  background-color: red;
+  background-color: grey;
+  color: white;
   opacity: 0.9;
   height: 100%;
   width: 100%;
@@ -205,6 +207,16 @@ a:hover {
   margin: auto;
   margin-top: 35%;
   margin-bottom: 5%;
+}
+
+#resume-pdf-btn {
+  color: white;
+  border: 1px solid white;
+}
+
+#resume-pdf-btn:hover {
+  color: red;
+  border: 1px solid red;
 }
 
 .btn {
