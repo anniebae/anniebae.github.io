@@ -28,6 +28,19 @@ a:hover {
   text-decoration: none;
 }
 
+#chevron-arrows {
+  width: 100%;
+  margin-top: 28%;
+}
+
+.carousel-control.left {
+  text-align: left;
+}
+
+.carousel-control.right {
+  text-align: right;
+}
+
 /********************************* NAVBAR STYLE *********************************/
 .navbar {
   font-family: 'Poiret One';
