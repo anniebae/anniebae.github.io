@@ -3,9 +3,10 @@ var ResumeView = Backbone.View.extend({
   resumeTemplate: _.template($("#resume-template").html()),
   initialize: function() {
     this.render();
+    $('.resume-caption').hide();
   },
   events: {
-    'mouseenter .resume-photo' : 'showResume'
+    'mouseover .resume-photo' : 'showResume'
   },
   render: function() {
     this.$el.html(this.resumeTemplate());
@@ -13,40 +14,10 @@ var ResumeView = Backbone.View.extend({
   },
   showResume: function(e) {
     console.log('show Resume');
-    $(e.currentTarget).find('.resume-caption').css('display', 'block');
-    $(e.currentTarget).on('mouseleave', function() {
-      $(e.currentTarget).find('.resume-caption').css('display', 'none');
+    e.preventDefault();
+    $resumeDiv = $(e.currentTarget);
+    $resumeDiv.find('.resume-caption').slideDown("slow").mouseleave(function() {
+      $('.resume-caption').slideUp("slow");
     });
   },
-
-
-
-
 });
-
-
-
-
-
-// var ProjectsView = Backbone.View.extend({
-//   el: "#body",
-//   projectsTemplate: _.template($("#projects-template").html()),
-//   initialize: function() {
-//     this.render();
-//   },
-//   events: {
-//     'mouseenter .project-photo'  : 'showCaption'
-//   },
-//   render: function() {
-//     this.$el.html(this.projectsTemplate());
-//     return this;
-//   },
-//   showCaption: function(e) {
-//     console.log('hey man! love you!');
-//     $(e.currentTarget).find('.project-caption').css('display', 'block');
-//     $(e.currentTarget).on('mouseleave', function() {
-//       $(e.currentTarget).find('.project-caption').css('display', 'none');
-//     });
-//   },
-// });
-

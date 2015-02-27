@@ -3,20 +3,29 @@ var ProjectsView = Backbone.View.extend({
   projectsTemplate: _.template($("#projects-template").html()),
   initialize: function() {
     this.render();
+    $('.project-caption').hide();
   },
   events: {
-    'mouseenter .project-photo'  : 'showCaption'
+    'mouseover .project-photo'  : 'showCaption'
   },
   render: function() {
     this.$el.html(this.projectsTemplate());
     return this;
   },
   showCaption: function(e) {
-    console.log('hey man! love you!');
-    $(e.currentTarget).find('.project-caption').css('display', 'block');
-    $(e.currentTarget).on('mouseleave', function() {
-      $(e.currentTarget).find('.project-caption').css('display', 'none');
-    });
+    console.log('show resume');
+    e.preventDefault();
+    $projectDiv = $(e.currentTarget);
+    $projectDiv.find('.project-caption').slideDown("slow").mouseleave(function() {
+      $('.project-caption').slideUp("slow");
+    }); 
   },
 });
 
+
+
+// $(".bulletProj,.caption").mouseenter(function() {              
+//          $(".caption").toggle();        
+//     }).mouseleave(function () {     
+//         $(".caption").hide();
+//     });
