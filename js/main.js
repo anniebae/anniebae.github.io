@@ -18,10 +18,10 @@ $(function() {
 
 });
 
+new AppView();
 
-
-new MainView();
-new ProjectsView();
-new ResumeView();
-new PhotographyView();
-new ContactsView();
+// new MainView();
+// new ProjectsView();
+// new ResumeView();
+// new PhotographyView();
+// new ContactsView();
