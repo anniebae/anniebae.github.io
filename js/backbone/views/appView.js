@@ -27,11 +27,10 @@ var AppView = Backbone.View.extend({
     $('#connect').html(this.connectTemplate());
   },
   showMain: function() {
-    this.renderLogoNavbar();
-    $('#body').html(this.mainTemplate());
+    var bodyView = new BodyView();
   },
   showProjects: function() {
-    $('#body').html(this.projectsTemplate());
+    var projectsView = new ProjectsView();
   },
   showResume: function() {
     $('#body').html(this.resumeTemplate());
