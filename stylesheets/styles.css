@@ -31,7 +31,6 @@ a:hover {
   margin: 0 auto;
 }
 
-
 .navbar-nav {
   float: right;
   margin: 2%;
@@ -41,7 +40,10 @@ a:hover {
   margin: 8% auto;
 }
 
-
+.navbar-default .navbar-nav > li > a:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
 
 /********************************* MAIN STYLE *********************************/
 #main-wrapper {
@@ -120,6 +122,12 @@ a:hover {
 .project-text {
   width: 50%;
   margin: 25% auto;
+}
+
+.btn:hover {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
 }
 /********************************* PROJECTS STYLE *********************************/
 
