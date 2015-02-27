@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poiret One';
+  /*font-family: 'Poiret One';*/
   /*background-color: #f3f3f3;*/
 }
 
@@ -7,7 +7,24 @@ h1 {
   font-family: 'Poiret One';
 }
 
+h1:hover {
+  text-decoration: none;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
 .navbar {
+  font-family: 'Poiret One';
   background-color: white;
   border-color: white;
   width: 80%;
@@ -104,8 +121,9 @@ h1 {
   width: 50%;
   margin: 25% auto;
 }
-
 /********************************* PROJECTS STYLE *********************************/
+
+/********************************* RESUME STYLE *********************************/
 .resume-img {
   height: 500px;
   width: 400px;
@@ -142,4 +160,39 @@ h1 {
   background-color: transparent;
   border-radius: 0px;
   color: black;
+}
+/********************************* RESUME STYLE *********************************/
+
+/********************************* PHOTOGRAPHY STYLE *********************************/
+.photography-img {
+  width: 100%;
+}
+
+#camera-div {
+  text-align: center;
+}
+.camera {
+  height: 50px;
+  padding: 2px;
+  opacity: 0.5;
+}
+
+.camera:hover {
+  opacity: 1;
+}
+/********************************* PHOTOGRAPHY STYLE *********************************/
+#contacts-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.contacts-para {
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.contact-link {
+  font-weight: 200;
 }
