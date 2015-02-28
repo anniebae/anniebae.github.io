@@ -193,6 +193,9 @@ a:hover {
 .resume-img {
   height: 500px;
   width: 400px;
+  -moz-box-shadow:    3px 3px 5px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 3px #ccc;
+  box-shadow:         3px 3px 5px 3px #ccc;
 }
 
 .resume-photo {
