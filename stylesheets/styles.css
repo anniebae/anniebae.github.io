@@ -1,13 +1,12 @@
 body {
-  /*font-family: 'Poiret One';*/
-  /*background-color: #f3f3f3;*/
+  height: 75%;
 }
 
 h1 {
   font-family: 'Poiret One';
 }
 
-h3 {
+h4 {
   font-family: 'Poiret One';
 }
 
@@ -17,6 +16,13 @@ h1:hover {
 
 h4 {
   font-weight: 200;
+}
+
+p {
+  font-family: 'Poiret One';
+  text-align: center;
+  padding-top: 3%;
+  font-size: 12px;
 }
 
 a {
@@ -47,7 +53,7 @@ a:hover {
   font-family: 'Poiret One';
   background-color: white;
   border-color: white;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -81,7 +87,7 @@ a:hover {
 
 .carousel {
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
 }
 
 .carousel-control.left, 
@@ -116,11 +122,11 @@ a:hover {
 
 /********************************* SOCIAL MEDIA STYLE *********************************/
 #social-media-wrapper {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -130,7 +136,7 @@ a:hover {
 
 #social-media-ul {
   float: right;
-  margin: 5%;
+  margin-top: 5px;
 }
 
 .social-media-icon {
@@ -145,8 +151,10 @@ a:hover {
 
 /********************************* PROJECTS STYLE *********************************/
 #projects-wrapper {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .project-img {
@@ -191,6 +199,11 @@ a:hover {
 /********************************* PROJECTS STYLE *********************************/
 
 /********************************* RESUME STYLE *********************************/
+#resume-wrapper {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
 .resume-img {
   height: 500px;
   width: 400px;
@@ -265,9 +278,11 @@ a:hover {
 
 /********************************* CONTACTS STYLE *********************************/
 #contacts-wrapper {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   margin-top: 50px;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 
