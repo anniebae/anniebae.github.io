@@ -18,7 +18,7 @@ h4 {
   font-weight: 200;
 }
 
-p {
+.copyright {
   font-family: 'Poiret One';
   text-align: center;
   padding-top: 3%;
@@ -266,7 +266,7 @@ a:hover {
   text-align: center;
 }
 .camera {
-  height: 50px;
+  height: 40px;
   padding: 2px;
   opacity: 0.5;
 }
