@@ -145,6 +145,9 @@ a:hover {
 
 .social-media-icon:hover {
   opacity: 1;
+  -moz-box-shadow:    .5px .5px .5px #FF0000;
+  -webkit-box-shadow: .5px .5px .5px #FF0000;
+  box-shadow:         .5px .5px .5px #FF0000;
 }
 /********************************* SOCIAL MEDIA STYLE *********************************/
 
