@@ -53,8 +53,11 @@ a:hover {
   font-family: 'Poiret One';
   background-color: white;
   border-color: white;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0;
   width: 75%;
   margin: 0 auto;
+  margin-bottom: 1%;
 }
 
 .navbar-nav {
@@ -126,8 +129,8 @@ a:hover {
   margin: 0 auto;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 #social-media-ul li {
@@ -191,7 +194,7 @@ a:hover {
 
 .project-text {
   width: 50%;
-  margin: 25% auto;
+  margin: 20% auto;
 }
 
 .btn:hover {
@@ -285,7 +288,7 @@ a:hover {
   margin: 0 auto;
   margin-top: 50px;
   padding-top: 3%;
-  padding-bottom: 3%;
+  padding-bottom: 7%;
 }
 
 
