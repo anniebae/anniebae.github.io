@@ -13,7 +13,7 @@ var ProjectsView = Backbone.View.extend({
     return this;
   },
   showCaption: function(e) {
-    console.log('show resume');
+    console.log('show projects');
     e.preventDefault();
     $projectDiv = $(e.currentTarget);
     $projectDiv.find('.project-caption').slideDown("slow").mouseleave(function() {
