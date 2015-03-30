@@ -112,9 +112,9 @@
   <div id="projects-wrapper">
     <div class="row">
       <div class="col-xs-6 col-sm-3">
-        <h4>Project 1: RESTaurant</h4>
+        <h4 class="projects-name">Project 1: RESTaurant</h4>
           <div class="project-photo">
-            <img src="images/RESTaurant.png" class="project-img" id="poo" alt="">
+            <img src="images/projects/RESTaurant.png" class="project-img" id="poo" alt="">
             <div class="project-caption">
               <p class="project-text">
                 In week 4 of 12:
@@ -129,9 +129,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">
-        <h4>Project 2: Whiskers</h4>
+        <h4 class="projects-name">Project 2: Whiskers</h4>
           <div class="project-photo">
-            <img src="images/whiskers.png" class="project-img" alt="">
+            <img src="images/projects/whiskers.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                 In week 7 of 12:
@@ -146,9 +146,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">      
-        <h4>Project 3: Hike</h4>
+        <h4 class="projects-name">Project 3: Hike</h4>
           <div class="project-photo">
-            <img src="images/hike.png" class="project-img" alt="">
+            <img src="images/projects/hike.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                 In week 9 of 12:
@@ -163,9 +163,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">
-        <h4>Project 4: Basic</h4>
+        <h4 class="projects-name">Project 4: Basic</h4>
           <div class="project-photo">
-            <img src="images/basic.png" class="project-img" alt="">
+            <img src="images/projects/basic.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                 FINAL PROJECT:
@@ -182,9 +182,9 @@
 
     <div class="row">
       <div class="col-xs-6 col-sm-3">
-        <h4>Portfolio</h4>
+        <h4 class="projects-name">Portfolio</h4>
           <div class="project-photo">
-            <img src="images/portfolio.png" class="project-img" alt="">
+            <img src="images/projects/portfolio.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                 Personal Webpage:
@@ -199,9 +199,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">
-        <h4>I x 4</h4>
+        <h4 class="projects-name">I x 4</h4>
           <div class="project-photo">
-            <img src="images/Ix4.png" class="project-img" alt="">
+            <img src="images/projects/Ix4.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                  Implemented parallax scrolling effects with Stellar.js.
@@ -214,9 +214,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">
-        <h4>Travelography</h4>
+        <h4 class="projects-name">Travelography</h4>
           <div class="project-photo">
-            <img src="images/travelography.png" class="project-img" alt="">
+            <img src="images/projects/travelography.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                 Single page app built in Backbone.js. [A compilation of photos I took while traveling.]
@@ -229,9 +229,9 @@
       </div>
 
       <div class="col-xs-6 col-sm-3">
-        <h4>sub-URBVN</h4>
+        <h4 class="projects-name">sub-URBVN</h4>
           <div class="project-photo">
-            <img src="images/sub-URBVN.png" class="project-img" alt="">
+            <img src="images/projects/sub-URBVN.png" class="project-img" alt="">
             <div class="project-caption">
               <p class="project-text">
                  Single page website built in Backbone.js implementing HTML5 video attribute and jQuery Timelinr.
@@ -316,20 +316,46 @@
 <!--   CONTACTS TEMPLATE -->
 <script type="text/template" id="contacts-template">
   <div id="contacts-wrapper">
-    <div class="contacts-para">
-      <p>
-        Hey! You've reached my contacts page. <br>
-        Feel free to shoot me an <a href="mailto:bae.annie@gmail.com"><b class="contact-link">email</b></a>. You can<br> find me on <a href="https://www.linkedin.com/in/anniebae" target="_blank"><b class="contact-link">LinkedIn</b></a> 
-        and stalk my <a href="https://github.com/anniebae" target="_blank"><b class="contact-link">GitHub</b></a>,<br>as well.
-        For additional information, visit my <br>
-        <a href="https://profiles.generalassemb.ly/annie-bae" target="_blank"><b class="contact-link">General Assembly Profile</b></a>.
-        <p>Cheers, Annie</p>
-      </p>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-3">
+        <a href="mailto:bae.annie@gmail.com">
+          <img src="images/contacts/gmail.png" class="contacts-icon">
+        </a>
+        <div class="contacts-name">
+          <p>GMAIL &rtrif; </p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="https://www.linkedin.com/in/anniebae" target="_blank">
+          <img src="images/contacts/linkedin.png" class="contacts-icon">
+        </a>
+        <div class="contacts-name">
+          <p>LINKEDIN &rtrif; </p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="https://www.linkedin.com/in/anniebae" target="_blank">
+          <img src="images/contacts/github.png" class="contacts-icon">
+        </a>
+        <div class="contacts-name">
+          <p>GITHUB &rtrif; </p>
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-3">
+        <a href="https://profiles.generalassemb.ly/annie-bae" target="_blank" target="_blank">
+          <img src="images/contacts/ga.png" class="contacts-icon ga-icon">
+        </a>
+        <div class="contacts-name">
+          <p>GENERAL ASSEMBLY &rtrif; </p>
+        </div>
+      </div>
     </div>
   </div>
 </script>
-
-
 
 
   <script src="js/lib/jquery.js"></script>

@@ -167,6 +167,10 @@ a:hover {
   padding-bottom: 3%;
 }
 
+.projects-name {
+  color: blue;
+}
+
 .project-img {
   width: 100%;
   height: 200px;
@@ -291,8 +295,8 @@ a:hover {
   margin-top: 50px;
   padding-top: 3%;
   padding-bottom: 7%;
+  text-align: center;
 }
-
 
 .contacts-para {
   font-size: 40px;
@@ -302,5 +306,19 @@ a:hover {
 
 .contact-link {
   font-weight: 200;
+}
+
+.contacts-name {
+  font-family: 'Poiret One';
+  color: blue;
+}
+
+.contacts-icon:hover {
+  border-radius: 100%;
+  background-color: #E0F0FF;
+}
+
+.ga-icon {
+  width: 30.5%;
 }
 /********************************* CONTACTS STYLE *********************************/
