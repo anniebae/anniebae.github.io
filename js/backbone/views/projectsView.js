@@ -16,8 +16,8 @@ var ProjectsView = Backbone.View.extend({
     console.log('show projects');
     e.preventDefault();
     $projectDiv = $(e.currentTarget);
-    $projectDiv.find('.project-caption').slideDown("slow").mouseleave(function() {
-      $('.project-caption').slideUp("slow");
+    $projectDiv.find('.project-caption').show().mouseleave(function() {
+      $('.project-caption').hide();
     }); 
   },
 });

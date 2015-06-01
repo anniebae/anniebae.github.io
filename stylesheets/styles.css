@@ -181,9 +181,8 @@ a:hover {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: grey;
+  background-color: black;
   color: white;
-  opacity: 0.9;
   text-align: center;
   font-size: 13px;
   font-weight: 300;
