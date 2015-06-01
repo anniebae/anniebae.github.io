@@ -3,6 +3,7 @@ var AppView = Backbone.View.extend({
   logoNavbarTemplate: _.template($("#logo-navbar-template").html()),
   connectTemplate: _.template($("#connect-template").html()),
   mainTemplate: _.template($('#main-template').html()),
+  gaTemplate: _.template($('#ga-template').html()),
   projectsTemplate: _.template($("#projects-template").html()),
   resumeTemplate: _.template($("#resume-template").html()),
   photographyTemplate: _.template($("#photography-template").html()),
@@ -14,6 +15,7 @@ var AppView = Backbone.View.extend({
   },
   events: {
     'click #main-btn'        : 'showMain',
+    'click #ga-btn'          : 'showGa',
     'click #projects-btn'    : 'showProjects',
     'click #resume-btn'      : 'showResume',
     'click #photography-btn' : 'showPhotography',
@@ -28,6 +30,9 @@ var AppView = Backbone.View.extend({
   },
   showMain: function() {
     var bodyView = new BodyView();
+  },
+  showGa: function() {
+    var gaView = new GaView();
   },
   showProjects: function() {
     var projectsView = new ProjectsView();

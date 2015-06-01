@@ -30,6 +30,7 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
+        <li id="projects-tab"><a id="ga-btn" class="nav-li" href="#">GA</a></li>
         <li id="projects-tab"><a id="projects-btn" class="nav-li" href="#">PROJECTS</a></li>
         <li id="resume-tab"><a id="resume-btn" class="nav-li" href="#">RESUME</a></li>
         <li id="photography-tab"><a id="photography-btn" class="nav-li" href="#">PHOTOGRAPHY</a></li>
@@ -105,11 +106,9 @@
 </script>
 
 
-
-
-<!-- PROJECTS TEMPLATE -->
-<script type="text/template" id="projects-template">
-  <div id="projects-wrapper">
+<!-- GA TEMPLATE -->
+<script type="text/template" id="ga-template">
+  <div id="ga-wrapper">
     <div class="row">
       <div class="col-xs-6 col-sm-3">
         <h4 class="projects-name">Project 1: RESTaurant</h4>
@@ -179,7 +178,12 @@
         </a> -->
       </div>
     </div>
+  </div>
+</script>
 
+<!-- PROJECTS TEMPLATE -->
+<script type="text/template" id="projects-template">
+  <div id="projects-wrapper">
     <div class="row">
       <div class="col-xs-6 col-sm-3">
         <h4 class="projects-name">Portfolio</h4>
@@ -365,6 +369,7 @@
   <script src="js/lib/bootstrap.js"></script>
   <script src="js/backbone/views/appView.js"></script>
   <script src="js/backbone/views/mainView.js"></script>
+  <script src="js/backbone/views/gaView.js"></script>
   <script src="js/backbone/views/projectsView.js"></script>
   <script src="js/backbone/views/resumeView.js"></script>
   <script src="js/backbone/views/photographyView.js"></script>
