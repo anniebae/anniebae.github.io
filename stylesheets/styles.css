@@ -1,16 +1,5 @@
 body {
   height: 75%;
-}
-
-h1 {
-  font-family: 'Poiret One';
-}
-
-h3 {
-  font-family: 'Poiret One';
-}
-
-h4 {
   font-family: 'Poiret One';
 }
 
@@ -23,7 +12,6 @@ h4 {
 }
 
 .copyright {
-  font-family: 'Poiret One';
   text-align: center;
   padding-top: 3%;
   font-size: 12px;
@@ -54,7 +42,6 @@ a:hover {
 
 /********************************* NAVBAR STYLE *********************************/
 .navbar {
-  font-family: 'Poiret One';
   background-color: white;
   border-color: white;
   border-bottom: 1px solid lightgrey;
@@ -313,7 +300,6 @@ a:hover {
 }
 
 .contacts-name {
-  font-family: 'Poiret One';
   color: blue;
 }
 
