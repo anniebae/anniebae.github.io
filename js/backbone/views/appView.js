@@ -3,6 +3,7 @@ var AppView = Backbone.View.extend({
   logoNavbarTemplate: _.template($("#logo-navbar-template").html()),
   connectTemplate: _.template($("#connect-template").html()),
   mainTemplate: _.template($('#main-template').html()),
+  gaTemplate
   projectsTemplate: _.template($("#projects-template").html()),
   resumeTemplate: _.template($("#resume-template").html()),
   photographyTemplate: _.template($("#photography-template").html()),
