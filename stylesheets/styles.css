@@ -225,10 +225,8 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 3;
-/*  display: none;*/
-  background-color: grey;
+  background-color: black;
   color: white;
-  opacity: 0.9;
   height: 100%;
   width: 100%;
   text-align: center;

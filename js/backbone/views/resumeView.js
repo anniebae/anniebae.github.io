@@ -16,8 +16,8 @@ var ResumeView = Backbone.View.extend({
     console.log('show Resume');
     e.preventDefault();
     $resumeDiv = $(e.currentTarget);
-    $resumeDiv.find('.resume-caption').slideDown("slow").mouseleave(function() {
-      $('.resume-caption').slideUp("slow");
+    $resumeDiv.find('.resume-caption').show().mouseleave(function() {
+      $('.resume-caption').hide();
     });
   },
 });
