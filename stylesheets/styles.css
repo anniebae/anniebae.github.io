@@ -245,8 +245,7 @@ a:hover {
 }
 
 #resume-pdf-btn:hover {
-  color: blue;
-  border: 1px solid blue;
+  color: #000;
 }
 
 .btn {
