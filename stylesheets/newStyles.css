@@ -4,4 +4,29 @@
   background: url('../images/backdrop1.jpg');
   background-size: cover;
   border: 10px solid white;
+  position: relative;
+}
+
+.black-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.65;
+}
+
+.text-cover {
+  z-index: 9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-family: 'PT Mono';
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 40%;
+  letter-spacing: 7px;
 }
