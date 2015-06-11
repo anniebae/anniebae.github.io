@@ -1,0 +1,7 @@
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background: url('../images/backdrop1.jpg');
+  background-size: cover;
+  border: 10px solid white;
+}
