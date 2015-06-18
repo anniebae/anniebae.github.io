@@ -54,3 +54,30 @@ section  button {
 .menu-btn {
   height: 30px;
 }
+
+.overlay {
+  background: #fff;
+}
+
+.overlay ul {
+  width: 100%;
+}
+
+
+.overlay ul li a {
+  color: #000;
+}
+
+.overlay ul li a:hover {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+}
+
+.overlay-door.open nav {
+  width: 100%;
+}
+
+.overlay-door.open .overlay-close {
+  height: 45px;
+}
