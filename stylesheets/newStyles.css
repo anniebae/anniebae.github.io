@@ -1,10 +1,19 @@
 .landing-page {
   height: 100vh;
   width: 100vw;
-  background: url('../images/backdrop1.jpg');
   background-size: cover;
-  border: 10px solid white;
   position: relative;
+}
+
+.slide-img {
+  height: 100vh;
+  width: 100vw;
+}
+
+ul.cb-slideshow {
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0 
 }
 
 .black-cover {
