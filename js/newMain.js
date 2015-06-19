@@ -38,6 +38,8 @@ var overlayTrigger = function() {
   triggerBttn.addEventListener( 'click', toggleOverlay );
   closeBttn.addEventListener( 'click', toggleOverlay );
 }
+
+
 new WOW().init();
 
 new MainView();
