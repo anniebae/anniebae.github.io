@@ -3,8 +3,9 @@ var MainView = Backbone.View.extend({
   mainTemplate: _.template($('#landing-template').html()),
   initialize: function(){
     this.render();
+    overlayTrigger();
   },
   render: function(){
     this.$el.html(this.mainTemplate());
   }
-});
+ });
