@@ -15,6 +15,9 @@
 </head>
 <body>
 
+<div id="body"></div>
+
+<script type="text/template" id="landing-template">
   <div class="landing-page">
     <ul class="cb-slideshow">
       <li><span><img src="./images/backdrop1.jpg" class="slide-img"></span></li>
@@ -28,27 +31,28 @@
     </div>
     <div class="text-cover">
       <h1 class="wow rubberBand">annieBAE</h1>
-        
-
-    <section>
-      <p><button id="trigger-overlay" type="button"><img src="./images/hamburger.png" class="menu-btn"></button></p>
-    </section>
-    <div class="overlay overlay-door">
-      <button type="button" class="overlay-close">Close</button>
-      <nav>
-      <ul>
-        <li><a href="#">GA</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Photography</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      </nav>
-    </div>
-
+      <section>
+        <p><button id="trigger-overlay" type="button"><img src="./images/hamburger.png" class="menu-btn"></button></p>
+      </section>
+      <div class="overlay overlay-door">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+        <ul>
+          <li><a href="#ga-wrapper" id="btn-ga">GA</a></li>
+          <li><a href="#" id="btn-projects">Projects</a></li>
+          <li><a href="#" id="btn-photography">Photography</a></li>
+          <li><a href="#" id="btn-resume">Resume</a></li>
+          <li><a href="#" id="btn-contact">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
     </div>
   </div>
+</script>
   
+<!--   <div id="ga-wrapper">
+    <h1>General Assembly Projects</h1>
+  </div> -->
 
 
   <script src="js/lib/jquery.js"></script>
@@ -60,6 +64,7 @@
   <script src="js/lib/demo1.js"></script>
   <script src="js/lib/classie.js"></script>
   <script src="js/lib/wow.js"></script>
+  <script src="js/newBackbone/views/mainView.js"></script>
   <script src="js/newMain.js"></script>
 </body>
 </html>
