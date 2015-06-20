@@ -3,6 +3,7 @@ var MainView = Backbone.View.extend({
   mainTemplate: _.template($('#landing-template').html()),
   projectTemplate: _.template($('#project-template').html()),
   photographyTemplate: _.template($('#photography-template').html()),
+  resumeTemplate: _.template($('#resume-template').html()),
   initialize: function(){
     this.render();
     overlayTrigger();
@@ -10,7 +11,8 @@ var MainView = Backbone.View.extend({
   events: {
     'click #btn-projects'    : 'showProjects',
     'mouseover .project-div' : 'showCaption',
-    'click #btn-photography' : 'showPhotography'
+    'click #btn-photography' : 'showPhotography',
+    'click #btn-resume'      : 'showResume'
   },
   render: function(){
     this.$el.html(this.mainTemplate());
@@ -32,5 +34,8 @@ var MainView = Backbone.View.extend({
     this.$el.html(this.photographyTemplate());
     var slider = new WallopSlider('.wallop-slider');
     return this;
+  },
+  showResume: function() {
+    this.$el.html(this.resumeTemplate());
   }
  });
