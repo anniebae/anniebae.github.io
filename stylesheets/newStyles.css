@@ -1,3 +1,7 @@
+body {
+  font-family: 'PT Mono';
+}
+
 .landing-page {
   height: 100vh;
   width: 100vw;
@@ -29,7 +33,6 @@ ul.cb-slideshow {
   position: absolute;
   height: 100%;
   width: 100%;
-  font-family: 'PT Mono';
   color: white;
 }
 
@@ -103,6 +106,33 @@ section  button {
   z-index: 1;
   top: 0;
   left: 0;
+  color: #fff;
+}
+
+.project-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  color: #fff;
+  top: 0;
+  left: 0;
+  font-size: 42px;
+  text-align: center;
+  margin: 12% auto;
+}
+
+.project-view {
+  background: transparent;
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 1.5%;
+  color: #fff;
+}
+
+.project-view:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .project-container {
