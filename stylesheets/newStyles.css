@@ -160,6 +160,27 @@ section  button {
   padding: 0;
 }
 
+.wallop-slider {
+  position: relative;
+}
+
+.wallop-slider-buttons {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+.wallop-slider__btn {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  border-radius: 0;
+}
+
+.wallop-slider__btn--next {
+  float: right;
+}
+
 @media (max-width: 767px) {
   .project-img {
     height: 425px;
