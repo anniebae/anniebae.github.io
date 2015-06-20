@@ -214,6 +214,22 @@ section  button {
   width: 100%;
 }
 
+#social-media-ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+#social-media-ul li {
+  display: inline-block;
+}
+
+#social-media-ul li:hover {
+  -webkit-filter: invert(50%);
+  filter: invert(50%);
+}
+
+
 @media (max-width: 767px) {
   .project-img {
     height: 425px;
