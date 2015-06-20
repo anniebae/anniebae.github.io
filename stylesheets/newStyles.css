@@ -2,10 +2,6 @@ body {
   font-family: 'PT Mono';
 }
 
-.landing-page .menu-btn {
-  
-}
-
 .project-wrapper .menu-btn {
   -webkit-filter: invert(100%)
 }
@@ -158,6 +154,10 @@ section  button {
 .project-img {
   width: 100%;
   height: 300px;
+}
+
+.wallop-slider--fold .wallop-slider__list {
+  padding: 0;
 }
 
 @media (max-width: 767px) {
