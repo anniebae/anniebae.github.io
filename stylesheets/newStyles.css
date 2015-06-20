@@ -2,6 +2,14 @@ body {
   font-family: 'PT Mono';
 }
 
+.landing-page .menu-btn {
+  
+}
+
+.project-wrapper .menu-btn {
+  -webkit-filter: invert(100%)
+}
+
 .landing-page {
   height: 100vh;
   width: 100vw;
