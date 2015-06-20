@@ -165,6 +165,7 @@ section  button {
 }
 
 .wallop-slider-buttons {
+  padding: 1%;
   position: absolute;
   top: 45%;
   width: 100%;
@@ -179,6 +180,23 @@ section  button {
 
 .wallop-slider__btn--next {
   float: right;
+}
+
+.blogger-div {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.btn-blogger {
+  border: 1px solid black;
+  height: 25px;
+  background: #fff;
+  color: #000;
+}
+
+.btn-blogger:hover {
+  background: #000;
+  color: #fff;
 }
 
 @media (max-width: 767px) {
