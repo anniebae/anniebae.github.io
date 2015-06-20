@@ -30,5 +30,7 @@ var MainView = Backbone.View.extend({
   },
   showPhotography: function() {
     this.$el.html(this.photographyTemplate());
+    var slider = new WallopSlider('.wallop-slider');
+    return this;
   }
  });

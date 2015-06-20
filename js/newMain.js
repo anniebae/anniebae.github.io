@@ -40,6 +40,6 @@ var overlayTrigger = function() {
 }
 
 
-new WOW().init();
 
+new WOW().init();
 new MainView();

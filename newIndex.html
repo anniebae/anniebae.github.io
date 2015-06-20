@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="stylesheets/lib/demo.css">
   <link rel="stylesheet" href="stylesheets/lib/style6.css">
   <link rel="stylesheet" href="stylesheets/lib/modernizr.css">
+  <link rel="stylesheet" href="stylesheets/lib/wallop-slider.css">
   <link rel="stylesheet" href="stylesheets/newStyles.css">
 </head>
 <body>
@@ -146,8 +147,30 @@
 <script type="text/template" id="photography-template">
   <div>
     <h2>Photography</h2>
+    <div class="wallop-slider">
+      <ul class="wallop-slider__list">
+        <li class="wallop-slider__item wallop-slider__item--current">
+          <img src="images/IMG_5242.jpg">
+        </li>
+        <li class="wallop-slider__item">
+          <img src="images/IMG_0766.JPG">
+        </li>
+        <li class="wallop-slider__item">
+          <img src="images/IMG_2495.JPG">
+        </li>
+        <li class="wallop-slider__item">
+          <img src="images/IMG_3268.JPG">
+        </li>
+        <li class="wallop-slider__item">
+          <img src="images/IMG_6694.JPG">
+        </li>
+      </ul>
+      <button class="wallop-slider__btn wallop-slider__btn--previous" disabled="disabled">Previous</button>
+      <button class="wallop-slider__btn wallop-slider__btn--next">Next</button>
+    </div>
   </div>
 </script>
+
 
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/underscore.js"></script>
@@ -158,6 +181,7 @@
   <script src="js/lib/demo1.js"></script>
   <script src="js/lib/classie.js"></script>
   <script src="js/lib/wow.js"></script>
+  <script src="js/lib/wallopSlider.js"></script>
   <script src="js/newBackbone/views/mainView.js"></script>
   <script src="js/newMain.js"></script>
 </body>
