@@ -40,6 +40,17 @@ var overlayTrigger = function() {
 }
 
 
+$(function() {
+  $('.contact-icon').mouseover(function() {
+    $('.contact-text').css("visibility","visible");
+  });
+
+  $('.contact-icon').mouseout(function() {
+    $('.contact-text').css("visibility","hidden");
+  });
+});
+
+
 
 new WOW().init();
 new MainView();

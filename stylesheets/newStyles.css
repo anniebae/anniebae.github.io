@@ -229,6 +229,28 @@ section  button {
   filter: invert(50%);
 }
 
+.row-contact {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.ga-icon {
+  height: 193px;
+  margin-top: 50px;
+}
+
+/*.contacts-icon:hover {
+  border-radius: 100%;
+  background-color: #E0F0FF;
+}*/
+
+/*.contacts-icon {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}*/
 
 @media (max-width: 767px) {
   .project-img {
