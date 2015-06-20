@@ -43,6 +43,12 @@ h1 {
   letter-spacing: 7px;
 }
 
+h2 {
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
 section {
   padding: 0px;
   position: absolute;
