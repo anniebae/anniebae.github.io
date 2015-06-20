@@ -245,12 +245,12 @@ section  button {
   background-color: #E0F0FF;
 }*/
 
-/*.contacts-icon {
+.contact-icon {
 position:relative;
 bottom:30px;
 left:0px;
 visibility:hidden;
-}*/
+}
 
 @media (max-width: 767px) {
   .project-img {
