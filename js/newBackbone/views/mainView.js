@@ -7,12 +7,26 @@ var MainView = Backbone.View.extend({
     overlayTrigger();
   },
   events: {
-    'click #btn-projects' : 'showProjects'
+    'click #btn-projects' : 'showProjects',
+    'mouseover .project-div' : 'showCaption'
   },
   render: function(){
     this.$el.html(this.mainTemplate());
   },
   showProjects: function() {
     this.$el.html(this.projectTemplate());
+  },
+  showCaption: function(e) {
+    e.preventDefault();
+    $projectDiv = $(e.currentTarget);
+    $projectDiv.find('.project-text').show().mouseleave(function() {
+      $('.project-text').hide();
+    });
+    $projectDiv.find('.project-block').css('opacity', '0.8').mouseleave(function() {
+      $('.project-block').css('opacity', '0.18');
+    });
+
+
+
   }
  });
