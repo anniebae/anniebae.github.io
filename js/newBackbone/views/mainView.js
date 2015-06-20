@@ -1,18 +1,18 @@
 var MainView = Backbone.View.extend({
   el: "#body",
   mainTemplate: _.template($('#landing-template').html()),
-  gaTemplate: _.template($('#ga-template').html()),
+  projectTemplate: _.template($('#project-template').html()),
   initialize: function(){
     this.render();
     overlayTrigger();
   },
   events: {
-    'click #btn-ga' : 'showGa'
+    'click #btn-projects' : 'showProjects'
   },
   render: function(){
     this.$el.html(this.mainTemplate());
   },
-  showGa: function() {
-    this.$el.html(this.gaTemplate());
+  showProjects: function() {
+    this.$el.html(this.projectTemplate());
   }
  });
