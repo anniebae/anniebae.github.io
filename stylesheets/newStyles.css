@@ -237,8 +237,8 @@ section  button {
 }
 
 .ga-icon {
-  height: 193px;
-  margin-top: 50px;
+  height: 165px;
+  margin-top: 45px;
 }
 
 .one-contact {
@@ -254,6 +254,21 @@ section  button {
   background-color: #000;
   padding-top: 37px;
   display: none;
+}
+
+.contact-text-ga {
+  top: 22%;
+  font-size: 58px;
+  position: absolute;
+  height: 82.85%;
+  width: 100%;
+  background-color: #000;
+  padding-top: 37px;
+  display: none;
+}
+
+a .contact-text-ga {
+  color: #fff;
 }
 
 a .contact-text {

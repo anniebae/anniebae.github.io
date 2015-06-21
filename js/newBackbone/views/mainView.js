@@ -51,5 +51,8 @@ var MainView = Backbone.View.extend({
     $contactDiv.find('.contact-text').show().mouseleave(function() {
       $('.contact-text').hide();
     });
+    $contactDiv.find('.contact-text-ga').show().mouseleave(function() {
+      $('.contact-text-ga').hide();
+    });
   }
  });
