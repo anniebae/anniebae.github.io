@@ -10,11 +10,12 @@ var MainView = Backbone.View.extend({
     overlayTrigger();
   },
   events: {
-    'click #btn-projects'    : 'showProjects',
-    'mouseover .project-div' : 'showCaption',
-    'click #btn-photography' : 'showPhotography',
-    'click #btn-resume'      : 'showResume',
-    'click #btn-contact'     : 'showContact'
+    'click #btn-projects'     : 'showProjects',
+    'mouseover .project-div'  : 'showCaption',
+    'click #btn-photography'  : 'showPhotography',
+    'click #btn-resume'       : 'showResume',
+    'click #btn-contact'      : 'showContact',
+    'mouseover .one-contact' : 'showText'
   },
   render: function(){
     this.$el.html(this.mainTemplate());
@@ -42,5 +43,12 @@ var MainView = Backbone.View.extend({
   },
   showContact: function() {
     this.$el.html(this.contactTemplate());
-  }
+  },
+  // showText: function(e) {
+  //   e.preventDefault();
+  //   $contactDiv = $(e.currentTarget);
+  //   $contactDiv.find('.contact-text').show().mouseleave(function() {
+  //     $('.contact-text').hide();
+  //   });
+  // }
  });

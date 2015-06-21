@@ -240,16 +240,23 @@ section  button {
   margin-top: 50px;
 }
 
-/*.contacts-icon:hover {
-  border-radius: 100%;
-  background-color: #E0F0FF;
-}*/
+.one-contact {
+  position: relative;
+}
 
-.contact-icon {
-position:relative;
-bottom:30px;
-left:0px;
-visibility:hidden;
+.contact-text {
+  top: 20%;
+  font-size: 58px;
+  position: absolute;
+  height: 63%;
+  width: 100%;
+  background-color: #000;
+  padding-top: 37px;
+/*  display: none;*/
+}
+
+a .contact-text {
+  color: #fff;
 }
 
 @media (max-width: 767px) {
