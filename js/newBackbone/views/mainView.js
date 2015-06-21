@@ -15,7 +15,7 @@ var MainView = Backbone.View.extend({
     'click #btn-photography'  : 'showPhotography',
     'click #btn-resume'       : 'showResume',
     'click #btn-contact'      : 'showContact',
-    'mouseover .one-contact' : 'showText'
+    'mouseover .contact-icon' : 'showText'
   },
   render: function(){
     this.$el.html(this.mainTemplate());
@@ -45,14 +45,14 @@ var MainView = Backbone.View.extend({
     this.$el.html(this.contactTemplate());
     $('#tooltip').tooltip();
   },
-  showText: function(e) {
-    e.preventDefault();
-    $contactDiv = $(e.currentTarget);
-    $contactDiv.find('.contact-text').show().mouseleave(function() {
-      $('.contact-text').hide();
-    });
-    $contactDiv.find('.contact-text-ga').show().mouseleave(function() {
-      $('.contact-text-ga').hide();
-    });
-  }
+  // showText: function(e) {
+  //   e.preventDefault();
+  //   $contactDiv = $(e.currentTarget);
+  //   $contactDiv.find('.contact-text').show().mouseleave(function() {
+  //     $('.contact-text').hide();
+  //   });
+  //   $contactDiv.find('.contact-text-ga').show().mouseleave(function() {
+  //     $('.contact-text-ga').hide();
+  //   });
+  // }
  });

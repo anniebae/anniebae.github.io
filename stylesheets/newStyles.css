@@ -241,11 +241,24 @@ section  button {
   margin-top: 45px;
 }
 
-.one-contact {
-  position: relative;
+.contact-icon:hover {
+  background: #000;
+  border-radius: 100%;
 }
 
-.contact-text {
+/*img.contact-icon:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}*/
+
+/*.one-contact {
+  position: relative;
+}
+*/
+
+
+
+/*.contact-text {
   top: 18%;
   font-size: 58px;
   position: absolute;
@@ -265,7 +278,7 @@ section  button {
   background-color: #000;
   padding-top: 37px;
   display: none;
-}
+}*/
 
 a .contact-text-ga {
   color: #fff;
