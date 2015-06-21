@@ -274,6 +274,11 @@ a .contact-text {
   .project-img {
     height: 425px;
   }
+  .pivot-wave-gif {
+    position: initial;
+    text-align: center;
+
+  }
 }
 
 @media (max-width: 490px) {
