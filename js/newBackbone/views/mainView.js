@@ -43,6 +43,7 @@ var MainView = Backbone.View.extend({
   },
   showContact: function() {
     this.$el.html(this.contactTemplate());
+    $('#tooltip').tooltip();
   },
   showText: function(e) {
     e.preventDefault();

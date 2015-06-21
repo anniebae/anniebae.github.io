@@ -40,6 +40,5 @@ var overlayTrigger = function() {
 }
 
 
-
 new WOW().init();
 new MainView();
