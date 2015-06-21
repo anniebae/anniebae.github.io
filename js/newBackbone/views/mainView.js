@@ -44,11 +44,11 @@ var MainView = Backbone.View.extend({
   showContact: function() {
     this.$el.html(this.contactTemplate());
   },
-  // showText: function(e) {
-  //   e.preventDefault();
-  //   $contactDiv = $(e.currentTarget);
-  //   $contactDiv.find('.contact-text').show().mouseleave(function() {
-  //     $('.contact-text').hide();
-  //   });
-  // }
+  showText: function(e) {
+    e.preventDefault();
+    $contactDiv = $(e.currentTarget);
+    $contactDiv.find('.contact-text').show().mouseleave(function() {
+      $('.contact-text').hide();
+    });
+  }
  });

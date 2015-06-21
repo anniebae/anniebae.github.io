@@ -110,6 +110,7 @@ section  button {
 
 .project-wrapper {
   position: relative;
+  border: 1px solid #000;
 }
 
 .project-block {
@@ -245,18 +246,28 @@ section  button {
 }
 
 .contact-text {
-  top: 20%;
+  top: 18%;
   font-size: 58px;
   position: absolute;
-  height: 63%;
+  height: 68%;
   width: 100%;
   background-color: #000;
   padding-top: 37px;
-/*  display: none;*/
+  display: none;
 }
 
 a .contact-text {
   color: #fff;
+}
+
+.pivot-wave-gif {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pivot-wave-gif img {
+  height: 125px;
 }
 
 @media (max-width: 767px) {
