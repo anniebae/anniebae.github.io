@@ -237,48 +237,10 @@ section  button {
 }
 
 .ga-icon {
-  height: 165px;
-  margin-top: 45px;
+  height: 168px;
+  margin-top: 46px;
+  margin-bottom: 11%;
 }
-
-.contact-icon:hover {
-  background: #000;
-  border-radius: 100%;
-}
-
-/*img.contact-icon:hover {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}*/
-
-/*.one-contact {
-  position: relative;
-}
-*/
-
-
-
-/*.contact-text {
-  top: 18%;
-  font-size: 58px;
-  position: absolute;
-  height: 68%;
-  width: 100%;
-  background-color: #000;
-  padding-top: 37px;
-  display: none;
-}
-
-.contact-text-ga {
-  top: 22%;
-  font-size: 58px;
-  position: absolute;
-  height: 82.85%;
-  width: 100%;
-  background-color: #000;
-  padding-top: 37px;
-  display: none;
-}*/
 
 a .contact-text-ga {
   color: #fff;

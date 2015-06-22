@@ -44,15 +44,5 @@ var MainView = Backbone.View.extend({
   showContact: function() {
     this.$el.html(this.contactTemplate());
     $('#tooltip').tooltip();
-  },
-  // showText: function(e) {
-  //   e.preventDefault();
-  //   $contactDiv = $(e.currentTarget);
-  //   $contactDiv.find('.contact-text').show().mouseleave(function() {
-  //     $('.contact-text').hide();
-  //   });
-  //   $contactDiv.find('.contact-text-ga').show().mouseleave(function() {
-  //     $('.contact-text-ga').hide();
-  //   });
-  // }
+  }
  });
