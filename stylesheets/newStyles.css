@@ -242,12 +242,9 @@ section  button {
   margin-bottom: 11%;
 }
 
-a .contact-text-ga {
-  color: #fff;
-}
-
-a .contact-text {
-  color: #fff;
+.contact-icon:hover {
+  background: #F5F5F5;
+  border-radius: 100%;
 }
 
 .pivot-wave-gif {
