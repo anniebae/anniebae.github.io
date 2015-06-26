@@ -299,6 +299,7 @@ section  button {
   }
   .menu-btn, .menu-btn-invert, .overlay-door.open .overlay-close {
     height: 20px;
+    right: -10px;
   }
   .overlay ul li a {
     font-size: 38px;
