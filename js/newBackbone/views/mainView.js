@@ -10,6 +10,7 @@ var MainView = Backbone.View.extend({
     overlayTrigger();
   },
   events: {
+    'click #btn-home'         : 'initialize',
     'click #btn-projects'     : 'showProjects',
     'mouseover .project-div'  : 'showCaption',
     'click #btn-photography'  : 'showPhotography',

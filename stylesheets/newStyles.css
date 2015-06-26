@@ -268,6 +268,9 @@ section  button {
 }
 
 @media (max-width: 767px) {
+  h2 {
+    font-size: 50px;
+  }
   .project-img {
     height: 425px;
   }
@@ -278,8 +281,26 @@ section  button {
   }
 }
 
-@media (max-width: 490px) {
-  .project-img {
-    height: 376px;
+@media (max-width: 560px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  h2 {
+    font-size: 35px;
+  }
+  .button-section p {
+    padding: 0px 0;
+  }
+  .button-overlay {
+    padding: 8px 8px;
+  }
+  .menu-btn, .menu-btn-invert, .overlay-door.open .overlay-close {
+    height: 20px;
+  }
+  .overlay ul li a {
+    font-size: 38px;
   }
 }
