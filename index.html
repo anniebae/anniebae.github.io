@@ -2,380 +2,312 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>annieBAE</title>
+  <title>annieBae</title>
   <link rel="icon" type="image/png" href="images/afav.png">
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/lib/animate.min.css">
+  <link rel="stylesheet" href="stylesheets/lib/bootstrap.css">
+  <link rel="stylesheet" href="stylesheets/lib/normalize.css">
+  <link rel="stylesheet" href="stylesheets/lib/demo.css">
+  <link rel="stylesheet" href="stylesheets/lib/style6.css">
+  <link rel="stylesheet" href="stylesheets/lib/modernizr.css">
+  <link rel="stylesheet" href="stylesheets/lib/wallop-slider.css">
+  <link rel="stylesheet" href="stylesheets/lib/wallop-slider--fold.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
-
 </head>
 <body>
 
-<div id="logo-navbar"></div>
 <div id="body"></div>
-<div id="connect"></div>
 
-<script type="text/template" id="logo-navbar-template">
-  <nav role="navigation" class="navbar navbar-default">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#" id="main-btn"><h1>annie<b>BAE</b></h1></a>
+<script type="text/template" id="landing-template">
+  <div class="landing-page">
+    <ul class="cb-slideshow">
+      <li><span><img src="./images/backdrop1.jpg" class="slide-img"></span></li>
+      <li><span><img src="./images/backdrop2.jpg" class="slide-img"></span></li>
+      <li><span><img src="./images/backdrop3.jpg" class="slide-img"></span></li>
+      <li><span><img src="./images/backdrop4.jpg" class="slide-img"></span></li>
+      <li><span><img src="./images/backdrop5.jpg" class="slide-img"></span></li>
+      <li><span><img src="./images/backdrop6.jpg" class="slide-img"></span></li>
+    </ul>
+    <div class="black-cover">
     </div>
-    <!-- Collection of nav links and other content for toggling -->
-    <div id="navbarCollapse" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li id="projects-tab"><a id="ga-btn" class="nav-li" href="#">GA</a></li>
-        <li id="projects-tab"><a id="projects-btn" class="nav-li" href="#">PROJECTS</a></li>
-        <li id="resume-tab"><a id="resume-btn" class="nav-li" href="#">RESUME</a></li>
-        <li id="photography-tab"><a id="photography-btn" class="nav-li" href="#">PHOTOGRAPHY</a></li>
-        <li id="contacts-tab"><a id="contacts-btn" class="nav-li" href="#">CONTACTS</a></li>
+    <div class="text-cover">
+      <h1 class="wow rubberBand">annieBAE</h1>
+      <section class="button-section">
+        <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn"></button></p>
+      </section>
+      <div class="overlay overlay-door">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+        <ul>
+          <li><a href="#" id="btn-home">Home</a></li>
+          <li><a href="#" id="btn-projects">Projects</a></li>
+          <li><a href="#" id="btn-photography">Photography</a></li>
+          <li><a href="#" id="btn-resume">Resume</a></li>
+          <li><a href="#" id="btn-contact">Contact</a></li>
+        </ul>
+        </nav>
+      </div>
+    <div class="social-media-wrapper">
+      <ul id="social-media-ul">
+        <li><a href="http://abaebae.blogspot.com/" target="_blank">
+          <img src="images/social_media/blogger-white.png" class="social-media-icon">
+        </a></li>
+        <li><a href="https://twitter.com/bae_annie" target="_blank">
+          <img src="images/social_media/twitter-white.png" class="social-media-icon">
+        </a></li>
+        <li><a href="http://a-baebae.tumblr.com/" target="_blank">
+          <img src="images/social_media/tumblr-white.png" class="social-media-icon">
+        </a></li>
+        <li><a href="https://www.facebook.com/bae.annie" target="_blank">
+          <img src="images/social_media/facebook-white.png" class="social-media-icon">
+        </a></li>
+        <li><a href="http://instagram.com/anniebae" target="_blank">
+          <img src="images/social_media/instagram-white.png" class="social-media-icon">
+        </a></li>
       </ul>
     </div>
-  </nav>
-</script>
+    </div>
 
-<!--   CONNECT TEMPLATE -->
-<script type="text/template" id="connect-template">
-<div id="social-media-wrapper">
-  <div class="row">
-      <div class="col-md-6 col-xs-6 connect-txt">
-        <h4>connect</h4>
-      </div>
-      <div class="col-md-6 col-xs-6 icon-wrapper">
-        <ul id="social-media-ul">
-          <li><a href="http://abaebae.blogspot.com/" target="_blank">
-            <img src="images/social_media/blogger.png" class="social-media-icon">
-          </a></li>
-          <li><a href="https://twitter.com/bae_annie" target="_blank">
-            <img src="images/social_media/twitter.png" class="social-media-icon">
-          </a></li>
-          <li><a href="http://a-baebae.tumblr.com/" target="_blank">
-            <img src="images/social_media/tumblr.png" class="social-media-icon">
-          </a></li>
-          <li><a href="https://www.facebook.com/bae.annie" target="_blank">
-            <img src="images/social_media/facebook.png" class="social-media-icon">
-          </a></li>
-          <li><a href="http://instagram.com/anniebae" target="_blank">
-            <img src="images/social_media/instagram.png" class="social-media-icon">
-          </a></li>
+  </div>
+</script>
+  
+<script type="text/template" id="project-template">
+  <div id="project-wrapper">
+    <section class="button-section">
+        <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn-invert"></button></p>
+      </section>
+      <div class="overlay overlay-door">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+        <ul>
+          <li><a href="#" id="btn-home">Home</a></li>
+          <li><a href="#" id="btn-projects">Projects</a></li>
+          <li><a href="#" id="btn-photography">Photography</a></li>
+          <li><a href="#" id="btn-resume">Resume</a></li>
+          <li><a href="#" id="btn-contact">Contact</a></li>
         </ul>
+        </nav>
       </div>
-  </div>
-</div>
-<p class="copyright">&copy; anniebae 2015. All Rights Reserved.</p>
-</script>
-
-<!--   MAIN TEMPLATE -->
-<script type="text/template" id="main-template">
-  <div id="main-wrapper">
-    <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-      <ol class="carousel-indicators">
-        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#main-carousel" data-slide-to="1"></li>
-        <li data-target="#main-carousel" data-slide-to="2"></li>
-      </ol>
-     
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/backdrop1.jpg" class="main-img">
-        </div>
-        <div class="item">
-          <img src="images/backdrop2.jpg" class="main-img">
-        </div>
-        <div class="item">
-          <img src="images/backdrop3.jpg" class="main-img">
+    <h2>Projects</h2>
+    <h4>2014 - 2015</h4>
+    <div class="row">   
+      <div class="project-div">
+        <div class="col-md-3 col-sm-3 col-xs-12 project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/portfolio.png"  class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>Portfolio</h3>
+              <a href="http://anniebae.com/" target="_blank"><button class="project-view">VIEW</button></a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="carousel-control" id="chevron-arrows">
-        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
-          <span><img src="images/chevron-left.png"></span>
-        </a>
-        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
-          <span><img src="images/chevron-right.png"></span>
-        </a>
+      <div class="project-div">
+        <div class="col-md-3 col-sm-3 col-xs-12  project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/Ix4.png"  class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>I x 4</h3>
+              <a href="http://104.236.211.223/" target="_blank"><button class="project-view">VIEW</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-div">
+        <div class="col-md-3 col-sm-3 col-xs-12  project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/travelography.png"  class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>Travelography</h3>
+              <a href="http://anniebae.me/" target="_blank"><button class="project-view">VIEW</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-div">
+        <div class="col-md-3 col-sm-3 col-xs-12  project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/sub-URBVN.png"  class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>sub-URBVN</h3>
+              <a href="http://107.170.169.20/" target="_blank"><button class="project-view">VIEW</button></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</script>
-
-
-<!-- GA TEMPLATE -->
-<script type="text/template" id="ga-template">
-  <div id="ga-wrapper">
-    <h3>General Assembly projects</h3>
     <div class="row">
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">Project 1: RESTaurant</h4>
-          <div class="project-photo">
-            <img src="images/projects/RESTaurant.png" class="project-img" id="poo" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                In week 4 of 12:
-                <br>
-                CRUD application for waitstaff to manage food orders.
-              </p>
+      <div class="project-div">
+        <div class="col-md-4 col-sm-4 col-xs-12 project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/RESTaurant.png"  class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>RESTaurant</h3>
+              <a href="https://wdi-restaurant.herokuapp.com/" target="_blank"><button class="project-view">VIEW</button></a>
             </div>
           </div>
-        <a href="https://wdi-restaurant.herokuapp.com/" target="_blank" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>
+        </div>
       </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">Project 2: Whiskers</h4>
-          <div class="project-photo">
-            <img src="images/projects/whiskers.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                In week 7 of 12:
-                <br>
-                Game modeled after hangman.
-              </p>
-            </div>
-          </div>  
-        <a href="https://wdi-whiskers.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">      
-        <h4 class="projects-name">Project 3: Hike</h4>
-          <div class="project-photo">
-            <img src="images/projects/hike.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                In week 9 of 12:
-                <br>
-                Location-based hike-finder developed as part of a group.
-              </p>          
+      <div class="project-div">
+        <div class="col-md-4 col-sm-4 col-xs-12 project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/whiskers.png" class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>Whiskers</h3>
+              <a href="https://wdi-whiskers.herokuapp.com/" target="_blank"><button class="project-view">VIEW</button></a>
             </div>
           </div>
-        <a href="http://wdi-hike.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>
+        </div>
       </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">Project 4: Basic</h4>
-          <div class="project-photo">
-            <img src="images/projects/basic.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                FINAL PROJECT:
-                <br>
-                Web application that measures how "basic" one is by utilizing the Instagram API.
-              </p>
+      <div class="project-div">
+        <div class="col-md-4 col-sm-4 col-xs-12 project-container">
+          <div class="project-wrapper">
+            <img src="images/projects/hike.png" class="project-img">
+            <div class="project-block"></div>
+            <div class="project-text">
+              <h3>Hike</h3>
+              <a href="http://wdi-hike.herokuapp.com/" target="_blank"><button class="project-view">VIEW</button></a>
             </div>
           </div>
-        <!-- <a href="https://wdi-basic.herokuapp.com/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a> -->
+        </div>
       </div>
     </div>
   </div>
 </script>
 
-<!-- PROJECTS TEMPLATE -->
-<script type="text/template" id="projects-template">
-  <div id="projects-wrapper">
-    <div class="row">
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">Portfolio</h4>
-          <div class="project-photo">
-            <img src="images/projects/portfolio.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                Personal Webpage:
-                <br>
-                Single page built in Backbone.js with HTML5/CSS3, JavaScript, and jQuery.
-              </p>
-            </div>
-          </div>
-        <a href="http://anniebae.com/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">I x 4</h4>
-          <div class="project-photo">
-            <img src="images/projects/Ix4.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                 Implemented parallax scrolling effects with Stellar.js.
-              </p>
-            </div>
-          </div>
-        <a href="http://104.236.211.223/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>  
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">Travelography</h4>
-          <div class="project-photo">
-            <img src="images/projects/travelography.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                Single page app built in Backbone.js. [A compilation of photos I took while traveling.]
-              </p>
-            </div>
-          </div>
-        <a href="http://anniebae.me/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>  
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <h4 class="projects-name">sub-URBVN</h4>
-          <div class="project-photo">
-            <img src="images/projects/sub-URBVN.png" class="project-img" alt="">
-            <div class="project-caption">
-              <p class="project-text">
-                 Single page website built in Backbone.js implementing HTML5 video attribute and jQuery Timelinr.
-              </p>
-            </div>
-          </div>
-        <a href="http://107.170.169.20/" class="btn btn-default btn-xs" target="_blank">
-          &UpperRightArrow; 
-        </a>  
-      </div>
-
-
-    </div>
-  </div>
-</script>
-
-<!--   RESUME TEMPLATE -->
-<script type="text/template" id="resume-template">  
-  <div id="resume-wrapper">
-    <div class="resume-photo">
-      <img src="images/resume.png" class="resume-img">
-      <div class="resume-caption">
-        <p class="resume-text">
-          Click below to open PDF
-        </p>
-        <input type="button" value="resume" class="btn" onclick="window.open('images/AnnieBaeResume.pdf', '_blank')" id="resume-pdf-btn">
-      </div>
-    </div>
-  </div>
-</script>
-
-
-<!--   PHOTOGRAPHY TEMPLATE -->
 <script type="text/template" id="photography-template">
-  <div id="photography-wrapper">
-    <div id="photography-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-      <ol class="carousel-indicators">
-        <li data-target="#photography-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#photography-carousel" data-slide-to="1"></li>
-        <li data-target="#photography-carousel" data-slide-to="2"></li>
-        <li data-target="#photography-carousel" data-slide-to="3"></li>
-        <li data-target="#photography-carousel" data-slide-to="4"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/IMG_5242.jpg" class="photography-img">
-        </div>
-        <div class="item">
-          <img src="images/IMG_0766.JPG" class="photography-img">
-        </div>
-        <div class="item">
-          <img src="images/IMG_2495.JPG" class="photography-img">
-        </div>
-        <div class="item">
-          <img src="images/IMG_3268.JPG" class="photography-img">
-        </div>
-        <div class="item">
-          <img src="images/IMG_6694.JPG" class="photography-img">
-        </div>
-      </div>
-
-
-      <div class="carousel-control" id="chevron-arrows">
-        <a class="left carousel-control" href="#photography-carousel" role="button" data-slide="prev">
-          <span><img src="images/chevron-left.png"></span>
-        </a>
-        <a class="right carousel-control" href="#photography-carousel" role="button" data-slide="next">
-          <span><img src="images/chevron-right.png"></span>
-        </a>
-      </div>
-
+  <div>
+    <section class="button-section">
+      <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn-invert"></button></p>
+    </section>
+    <div class="overlay overlay-door">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+      <ul>
+        <li><a href="#" id="btn-home">Home</a></li>
+        <li><a href="#" id="btn-projects">Projects</a></li>
+        <li><a href="#" id="btn-photography">Photography</a></li>
+        <li><a href="#" id="btn-resume">Resume</a></li>
+        <li><a href="#" id="btn-contact">Contact</a></li>
+      </ul>
+      </nav>
     </div>
-    <div id="camera-div">
-      <a href="http://abaebae.blogspot.com/" target="_blank">
-        <img src="images/camera.png" class="camera" alt="">
+    <h2>Photography</h2>
+    <div class="ext-div">
+      <p>&copy; Annie Bae | All Rights Reserved</p>
+      <a href="http://abaebae.blogspot.com/" target="_blank"><button class="btn-ext">more photos @ Blogger</button></a>
+    </div>
+    <div class="photo-slider wallop-slider wallop-slider--fold">
+      <ul class="wallop-slider__list">
+        <li class="wallop-slider__item wallop-slider__item--current"><img src="images/IMG_5242.jpg"></li>
+        <li class="wallop-slider__item"><img src="images/IMG_0766.JPG"></li>
+        <li class="wallop-slider__item"><img src="images/IMG_2495.JPG"></li>
+        <li class="wallop-slider__item"><img src="images/IMG_3268.JPG"></li>
+        <li class="wallop-slider__item"><img src="images/IMG_6694.JPG"></li>
+      </ul>
+      <div class="wallop-slider-buttons">
+        <button class="wallop-slider__btn wallop-slider__btn--previous btn btn--previous" disabled="disabled">Previous</button>
+        <button class="wallop-slider__btn wallop-slider__btn--next btn btn--next">Next</button>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="resume-template">
+  <div class="resume-wrapper">
+    <section class="button-section">
+      <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn-invert"></button></p>
+    </section>
+    <div class="overlay overlay-door">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+      <ul>
+        <li><a href="#" id="btn-home">Home</a></li>
+        <li><a href="#" id="btn-projects">Projects</a></li>
+        <li><a href="#" id="btn-photography">Photography</a></li>
+        <li><a href="#" id="btn-resume">Resume</a></li>
+        <li><a href="#" id="btn-contact">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+    <h2>Resume</h2>
+    <div class="ext-div">
+      <a href="images/AnnieBaeResume.pdf" target="_blank"><button class="btn-ext">Dowload</button></a>
+    </div>
+    <embed src="images/AnnieBaeResume.pdf" class="resume-pdf">
+  </div>
+</script>
+
+<script type="text/template" id="contact-template">
+    <section class="button-section">
+      <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn-invert"></button></p>
+    </section>
+    <div class="overlay overlay-door">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+      <ul>
+        <li><a href="#" id="btn-home">Home</a></li>
+        <li><a href="#" id="btn-projects">Projects</a></li>
+        <li><a href="#" id="btn-photography">Photography</a></li>
+        <li><a href="#" id="btn-resume">Resume</a></li>
+        <li><a href="#" id="btn-contact">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+  <h2>Contact</h2>
+  <div class="pivot-wave-gif">
+    <img src="images/Pivot_Wave.gif" data-toggle="tooltip" data-placement="top" id="tooltip" title="hello!">
+  </div>
+  <div class="row row-contact">
+    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
+      <a href="mailto:bae.annie@gmail.com">
+        <img src="images/contacts/gmail-256-black.png" class="contact-icon" id="contact-gmail">
       </a>
+      <p>Gmail</p>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
+      <a href="https://www.linkedin.com/in/anniebae" target="_blank">
+        <img src="images/contacts/linkedin-256-black.png" class="contact-icon" id="contact-linkedin">
+      </a>
+      <p>LinkedIn</p>  
+    </div>
+  </div>
+  <div class="row row-contact">
+    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
+      <a href="https://github.com/anniebae" target="_blank">
+        <img src="images/contacts/github-256-black.png" class="contact-icon" id="contact-github">
+      </a>
+      <p>GitHub</p>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
+      <a href="https://profiles.generalassemb.ly/annie-bae" target="_blank" target="_blank">
+        <div>
+        <img src="images/contacts/ga.png" class="contact-icon ga-icon" id="contact-ga">
+      </a>
+      <p>General Assembly</p>
     </div>
   </div>
 </script>
-
-<!--   CONTACTS TEMPLATE -->
-<script type="text/template" id="contacts-template">
-  <div id="contacts-wrapper">
-
-    <div class="row">
-      <div class="col-xs-6 col-sm-3">
-        <a href="mailto:bae.annie@gmail.com">
-          <img src="images/contacts/gmail.png" class="contacts-icon">
-        </a>
-        <div class="contacts-name">
-          <p>GMAIL &rtrif; </p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="https://www.linkedin.com/in/anniebae" target="_blank">
-          <img src="images/contacts/linkedin.png" class="contacts-icon">
-        </a>
-        <div class="contacts-name">
-          <p>LINKEDIN &rtrif; </p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="https://github.com/anniebae" target="_blank">
-          <img src="images/contacts/github.png" class="contacts-icon">
-        </a>
-        <div class="contacts-name">
-          <p>GITHUB &rtrif; </p>
-        </div>
-      </div>
-
-      <div class="col-xs-6 col-sm-3">
-        <a href="https://profiles.generalassemb.ly/annie-bae" target="_blank" target="_blank">
-          <img src="images/contacts/ga.png" class="contacts-icon ga-icon">
-        </a>
-        <div class="contacts-name">
-          <p>GENERAL ASSEMBLY &rtrif; </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</script>
-
 
 
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
   <script src="js/lib/bootstrap.js"></script>
-  <script src="js/backbone/views/appView.js"></script>
-  <script src="js/backbone/views/mainView.js"></script>
-  <script src="js/backbone/views/gaView.js"></script>
-  <script src="js/backbone/views/projectsView.js"></script>
-  <script src="js/backbone/views/resumeView.js"></script>
-  <script src="js/backbone/views/photographyView.js"></script>
-  <script src="js/backbone/views/contactsView.js"></script>
+  <script src="js/lib/modernizr.js"></script>
+  <script src="js/lib/modernizr.custom.js"></script>
+  <script src="js/lib/demo1.js"></script>
+  <script src="js/lib/classie.js"></script>
+  <script src="js/lib/wow.js"></script>
+  <script src="js/lib/wallopSlider.js"></script>
+  <script src="js/newBackbone/views/mainView.js"></script>
   <script src="js/main.js"></script>
-  
 </body>
 </html>
