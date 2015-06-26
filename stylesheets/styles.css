@@ -283,6 +283,9 @@ section  button {
   h2 {
     font-size: 40px;
   }
+  .btn {
+    font-size: 8.5px;
+  }
 }
 
 @media screen and (max-width: 490px) {
