@@ -1,310 +1,305 @@
 body {
-  height: 75%;
-  font-family: 'Poiret One';
+  font-family: 'PT Mono';
 }
 
-h1:hover {
-  text-decoration: none;
+.project-wrapper .menu-btn {
+  -webkit-filter: invert(100%)
+}
+
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+}
+
+.slide-img {
+  height: 100vh;
+  width: 100vw;
+}
+
+ul.cb-slideshow {
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 0 
+}
+
+.black-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.65;
+}
+
+.text-cover {
+  z-index: 9;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 325px;
+  letter-spacing: 7px;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 7px;
+  margin: 5%;
 }
 
 h4 {
-  font-weight: 200;
-}
-
-.copyright {
   text-align: center;
-  padding-top: 3%;
-  font-size: 12px;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+section {
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-a:hover {
-  color: blue;
-  text-decoration: none;
+section  button {
+  background: none;
 }
 
-#chevron-arrows {
+.menu-btn {
+  height: 30px;
+}
+
+.menu-btn-invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  height: 30px;
+}
+
+.overlay-door.open {
+  z-index: 5;
+}
+
+.overlay {
+  background: #fff;
+}
+
+.overlay ul {
   width: 100%;
-  margin-top: 28%;
 }
 
-.carousel-control.left {
-  text-align: left;
+
+.overlay ul li a {
+  color: #000;
 }
 
-.carousel-control.right {
-  text-align: right;
+.overlay ul li a:hover {
+  color: #fff;
+  background: #000;
+  text-decoration: none;
 }
 
-/********************************* NAVBAR STYLE *********************************/
-.navbar {
+.overlay-door.open nav {
+  width: 100%;
+}
+
+.overlay-door.open .overlay-close {
+  height: 45px;
+}
+
+#ga-wrapper {
   background-color: white;
-  border-color: white;
-  border-bottom: 1px solid lightgrey;
-  border-radius: 0;
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 1%;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
 }
 
-.navbar-nav {
-  float: right;
-  margin: 2%;
+.project-wrapper {
+  position: relative;
+  border: 1px solid #000;
 }
 
-.navbar-toggle {
-  margin: 8% auto;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  border-bottom: 1px solid blue;
-  color: blue;
-}
-
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: white;
-  color: blue;
-  border-bottom: 1px solid blue;
-}
-/********************************* NAVBAR STYLE *********************************/
-
-/********************************* MAIN STYLE *********************************/
-#main-wrapper {
-  text-align: center;
-}
-
-.carousel {
-  margin: 0 auto;
-  width: 75%;
-}
-
-.carousel-control.left, 
-.carousel-control.right {
-    background-image: none
-}
-
-.carousel-fade .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-.carousel-fade .carousel-inner .active {
-  opacity: 1 !important;
-}
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
+.project-block {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.18;
   z-index: 1;
+  top: 0;
+  left: 0;
+  color: #fff;
 }
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-.carousel-fade .carousel-control {
-  z-index: 2;
-}
-/********************************* MAIN STYLE *********************************/
 
-/********************************* SOCIAL MEDIA STYLE *********************************/
-#social-media-wrapper {
-  width: 75%;
-  margin: 0 auto;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
-  margin-top: 1%;
+.project-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  color: #fff;
+  top: 0;
+  left: 0;
+  font-size: 42px;
+  text-align: center;
+  margin: 12% auto;
+  display: none;
+}
+
+.project-view {
+  background: transparent;
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 1.5%;
+  color: #fff;
+}
+
+.project-view:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-container {
+  padding: 0px;
+}
+
+.project-img {
+  width: 100%;
+  height: 300px;
+}
+
+.wallop-slider--fold .wallop-slider__list {
+  padding: 0;
+}
+
+.wallop-slider {
+  position: relative;
+}
+
+.wallop-slider-buttons {
+  padding: 1%;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+.wallop-slider__btn {
+  background: white;
+  border: 2px solid black;
+  color: black;
+  border-radius: 0;
+}
+
+.wallop-slider__btn--next {
+  float: right;
+}
+
+.ext-div {
+  text-align: center;
   margin-bottom: 1%;
+}
+
+.btn-ext {
+  border: 1px solid black;
+  height: 25px;
+  background: #fff;
+  color: #000;
+}
+
+.btn-ext:hover {
+  background: #000;
+  color: #fff;
+}
+
+.resume-wrapper {
+  height: 100vh;
+}
+
+.resume-pdf {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#social-media-ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
 }
 
 #social-media-ul li {
   display: inline-block;
 }
 
-#social-media-ul {
-  float: right;
-  margin-top: 5px;
+#social-media-ul li:hover {
+  -webkit-filter: invert(50%);
+  filter: invert(50%);
 }
 
-.social-media-icon {
-  opacity: 0.3;
-}
-
-.social-media-icon:hover {
-  opacity: 1;
-  -moz-box-shadow:    .5px .5px .5px blue;
-  -webkit-box-shadow: .5px .5px .5px blue;
-  box-shadow:         .5px .5px .5px blue;
-}
-/********************************* SOCIAL MEDIA STYLE *********************************/
-
-#ga-wrapper {
-  width: 75%;
-  margin: 0 auto;
-}
-
-/********************************* PROJECTS STYLE *********************************/
-#projects-wrapper {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.projects-name {
-  color: blue;
-}
-
-.project-img {
-  width: 100%;
-  height: 200px;
-  opacity: 1;
-}
-
-.project-photo {
-  position: relative;
-  margin-bottom: 3%;
-}
-
-.project-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: none;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
+.row-contact {
   text-align: center;
-  font-size: 13px;
-  font-weight: 300;
-}
-
-.project-text {
-  width: 50%;
-  margin: 20% auto;
-}
-
-.btn:hover {
-  color: blue;
-  background-color: white;
-  border: 1px solid blue;
-}
-/********************************* PROJECTS STYLE *********************************/
-
-/********************************* RESUME STYLE *********************************/
-#resume-wrapper {
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-.resume-img {
-  height: 500px;
-  width: 400px;
-  -moz-box-shadow:    3px 3px 5px 3px #ccc;
-  -webkit-box-shadow: 3px 3px 5px 3px #ccc;
-  box-shadow:         3px 3px 5px 3px #ccc;
-}
-
-.resume-photo {
-  position: relative;
-  margin: auto;
-  width: 400px;
-}
-
-.resume-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  background-color: black;
-  color: white;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.resume-text {
-  width: 50%;
-  margin: auto;
-  margin-top: 35%;
-  margin-bottom: 5%;
-}
-
-#resume-pdf-btn {
-  color: white;
-  border: 1px solid white;
-}
-
-#resume-pdf-btn:hover {
-  color: #000;
-}
-
-.btn {
-  border: 1px solid black;
-  background-color: transparent;
-  border-radius: 0px;
-  color: black;
-}
-/********************************* RESUME STYLE *********************************/
-
-/********************************* PHOTOGRAPHY STYLE *********************************/
-.photography-img {
-  width: 100%;
-}
-
-#camera-div {
-  text-align: center;
-}
-.camera {
-  height: 40px;
-  padding: 2px;
-  opacity: 0.5;
-}
-
-.camera:hover {
-  opacity: 1;
-}
-/********************************* PHOTOGRAPHY STYLE *********************************/
-
-/********************************* CONTACTS STYLE *********************************/
-#contacts-wrapper {
-  width: 75%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding-top: 3%;
-  padding-bottom: 7%;
-  text-align: center;
-}
-
-.contacts-para {
-  font-size: 40px;
-  font-weight: 100;
-  text-align: center;
-}
-
-.contact-link {
-  font-weight: 200;
-}
-
-.contacts-name {
-  color: blue;
-}
-
-.contacts-icon:hover {
-  border-radius: 100%;
-  background-color: #E0F0FF;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .ga-icon {
-  width: 30.5%;
+  height: 168px;
+  margin-top: 46px;
+  margin-bottom: 11%;
 }
-/********************************* CONTACTS STYLE *********************************/
+
+.contact-icon:hover {
+  background: #F5F5F5;
+  border-radius: 100%;
+}
+
+.pivot-wave-gif {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.pivot-wave-gif img {
+  height: 125px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 50px;
+  }
+  .project-img {
+    height: 425px;
+  }
+  .pivot-wave-gif {
+    position: initial;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  h2 {
+    font-size: 35px;
+  }
+  .button-section p {
+    padding: 0px 0;
+  }
+  .button-overlay {
+    padding: 8px 8px;
+  }
+  .menu-btn, .menu-btn-invert, .overlay-door.open .overlay-close {
+    height: 20px;
+    right: -10px;
+  }
+  .overlay ul li a {
+    font-size: 38px;
+  }
+}

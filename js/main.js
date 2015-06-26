@@ -1,30 +1,44 @@
-$(function() {
-  $('.carousel').carousel({
-    interval: 3000
-  });
+var overlayTrigger = function() {
+  var triggerBttn = document.getElementById( 'trigger-overlay' ),
+      overlay = document.querySelector( 'div.overlay' ),
+      closeBttn = overlay.querySelector( 'button.overlay-close' );
+      transEndEventNames = {
+          'WebkitTransition': 'webkitTransitionEnd',
+          'MozTransition': 'transitionend',
+          'OTransition': 'oTransitionEnd',
+          'msTransition': 'MSTransitionEnd',
+          'transition': 'transitionend'
+      },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      support = { transitions : Modernizr.csstransitions };
 
-  $('#ga-tab').on('click', function () {
-    console.log('i work');
-    $(this).parent().find('li active').removeClass('active');
-    $(this).addClass('active');
-  });
-  $('#projects-tab').on('click', function() {
-    console.log('i work');
-    $(this).parent().find('li.active').removeClass('active');
-    $(this).addClass('active');
-  });
-  $('#resume-tab').on('click', function() {
-    $(this).parent().find('li.active').removeClass('active');
-    $(this).addClass('active');
-  });
-  $('#photography-tab').on('click', function() {
-    $(this).parent().find('li.active').removeClass('active');
-    $(this).addClass('active');
-  });
-  $('#contacts-tab').on('click', function() {
-    $(this).parent().find('li.active').removeClass('active');
-    $(this).addClass('active');
-  });
-});
+  function toggleOverlay() {
+      if( classie.has( overlay, 'open' ) ) {
+          classie.remove( overlay, 'open' );
+          classie.add( overlay, 'close' );
+          var onEndTransitionFn = function( ev ) {
+              if( support.transitions ) {
+                  if( ev.propertyName !== 'visibility' ) return;
+                  this.removeEventListener( transEndEventName, onEndTransitionFn );
+              }
+              classie.remove( overlay, 'close' );
+          };
+          if( support.transitions ) {
+              overlay.addEventListener( transEndEventName, onEndTransitionFn );
+          }
+          else {
+              onEndTransitionFn();
+          }
+      }
+      else if( !classie.has( overlay, 'close' ) ) {
+          classie.add( overlay, 'open' );
+      }
+  }
 
-new AppView();
+  triggerBttn.addEventListener( 'click', toggleOverlay );
+  closeBttn.addEventListener( 'click', toggleOverlay );
+}
+
+
+new WOW().init();
+new MainView();
