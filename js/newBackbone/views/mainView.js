@@ -22,6 +22,7 @@ var MainView = Backbone.View.extend({
   },
   showProjects: function() {
     this.$el.html(this.projectTemplate());
+    overlayTrigger();
   },
   showCaption: function(e) {
     e.preventDefault();
@@ -36,13 +37,16 @@ var MainView = Backbone.View.extend({
   showPhotography: function() {
     this.$el.html(this.photographyTemplate());
     var slider = new WallopSlider('.wallop-slider');
+    overlayTrigger();
     return this;
   },
   showResume: function() {
     this.$el.html(this.resumeTemplate());
+    overlayTrigger();
   },
   showContact: function() {
     this.$el.html(this.contactTemplate());
     $('#tooltip').tooltip();
+    overlayTrigger();
   }
  });
