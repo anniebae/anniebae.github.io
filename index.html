@@ -27,9 +27,7 @@
 <script type="text/template" id="landing-container-template">
   <div class="landing-page">
     <ul class="cb-slideshow">
-
       <!-- Backdrop Models -->
-
     </ul>
     <div class="black-cover">
     </div>
@@ -52,7 +50,7 @@
       </div>
       <div class="social-media-wrapper">
         <ul id="social-media-ul">
-          
+          <!-- insert social links -->
         </ul>
       </div>
     </div>
@@ -68,8 +66,6 @@
 <script type="text/template" id="landing-item-template">
   <li><span><img src="<%= name %>" class="slide-img"></span></li>
 </script>
-
-
   
 <script type="text/template" id="project-template">
   <div id="project-wrapper">
@@ -244,7 +240,8 @@
   </div>
 </script>
 
-<script type="text/template" id="contact-template">
+<script type="text/template" id="contact-container-template">
+  <div class="contact-wrapper">
     <section class="button-section">
       <p><button id="trigger-overlay" type="button" class="button-overlay"><img src="./images/hamburger.png" class="menu-btn-invert"></button></p>
     </section>
@@ -260,38 +257,23 @@
       </ul>
       </nav>
     </div>
-  <h2>Contact</h2>
-  <div class="pivot-wave-gif">
-    <img src="images/Pivot_Wave.gif" data-toggle="tooltip" data-placement="top" id="tooltip" title="hello!">
-  </div>
-  <div class="row row-contact">
-    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
-      <a href="mailto:bae.annie@gmail.com">
-        <img src="images/contacts/gmail-256-black.png" class="contact-icon" id="contact-gmail">
-      </a>
-      <p>Gmail</p>
+    <h2>Contact</h2>
+    <div class="pivot-wave-gif">
+      <img src="images/Pivot_Wave.gif" data-toggle="tooltip" data-placement="top" id="tooltip" title="hello!">
     </div>
-    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
-      <a href="https://www.linkedin.com/in/anniebae" target="_blank">
-        <img src="images/contacts/linkedin-256-black.png" class="contact-icon" id="contact-linkedin">
-      </a>
-      <p>LinkedIn</p>  
+    <div class="row row-contact">
+      
     </div>
   </div>
-  <div class="row row-contact">
-    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
-      <a href="https://github.com/anniebae" target="_blank">
-        <img src="images/contacts/github-256-black.png" class="contact-icon" id="contact-github">
-      </a>
-      <p>GitHub</p>
-    </div>
-    <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
-      <a href="https://profiles.generalassemb.ly/annie-bae" target="_blank" target="_blank">
-        <div>
-        <img src="images/contacts/ga.png" class="contact-icon ga-icon" id="contact-ga">
-      </a>
-      <p>General Assembly</p>
-    </div>
+</script>
+
+<script type="text/template" id="contact-item-template">
+  <div class="col-md-6 col-sm-6 col-xs-12 one-contact">
+    <a href="<%= url %>" target="_blank">
+      <% var className = name === 'General Assembly' ? 'ga-icon' : '' %>
+      <img src="<%= image %>" class="contact-icon <%= className %>" id="contact-gmail">
+    </a>
+    <p><%= name %></p>
   </div>
 </script>
 
@@ -311,6 +293,7 @@
   <script src="js/data/links.js"></script>
   <script src="js/models/app.js"></script>
   <script src="js/views/landing.js"></script>
+  <script src="js/views/contact.js"></script>
   <script src="js/views/mainView.js"></script>
   <script src="js/main.js"></script>
 </body>

@@ -3,7 +3,6 @@ var MainView = Backbone.View.extend({
   projectTemplate: _.template($('#project-template').html()),
   photographyTemplate: _.template($('#photography-template').html()),
   resumeTemplate: _.template($('#resume-template').html()),
-  contactTemplate: _.template($('#contact-template').html()),
   initialize: function(){
     this.render();
     overlayTrigger();
@@ -14,8 +13,7 @@ var MainView = Backbone.View.extend({
     'mouseover .project-div'  : 'showCaption',
     'click #btn-photography'  : 'showPhotography',
     'click #btn-resume'       : 'showResume',
-    'click #btn-contact'      : 'showContact',
-    'mouseover .contact-icon' : 'showText'
+    'click #btn-contact'      : 'showContact'
   },
   render: function(){
     var landing = new Landing();
@@ -45,8 +43,6 @@ var MainView = Backbone.View.extend({
     overlayTrigger();
   },
   showContact: function() {
-    this.$el.html(this.contactTemplate());
-    $('#tooltip').tooltip();
-    overlayTrigger();
-  }
+    var contact = new Contact();
+  },
  });
