@@ -52,25 +52,17 @@
       </div>
       <div class="social-media-wrapper">
         <ul id="social-media-ul">
-          <li><a href="http://abaebae.blogspot.com/" target="_blank">
-            <img src="images/social_media/blogger-white.png" class="social-media-icon">
-          </a></li>
-          <li><a href="https://twitter.com/bae_annie" target="_blank">
-            <img src="images/social_media/twitter-white.png" class="social-media-icon">
-          </a></li>
-          <li><a href="http://a-baebae.tumblr.com/" target="_blank">
-            <img src="images/social_media/tumblr-white.png" class="social-media-icon">
-          </a></li>
-          <li><a href="https://www.facebook.com/bae.annie" target="_blank">
-            <img src="images/social_media/facebook-white.png" class="social-media-icon">
-          </a></li>
-          <li><a href="http://instagram.com/anniebae" target="_blank">
-            <img src="images/social_media/instagram-white.png" class="social-media-icon">
-          </a></li>
+          
         </ul>
       </div>
     </div>
   </div>
+</script>
+
+<script type="text/template" id="social-link-template">
+  <li><a href="<%= url %>" target="_blank">
+    <img src="<%= image %>" class="social-media-icon">
+  </a></li>
 </script>
 
 <script type="text/template" id="landing-item-template">
@@ -316,6 +308,7 @@
   <script src="js/lib/wallopSlider.js"></script>
   <!-- Assets -->
   <script src="js/data/backdrops.js"></script>
+  <script src="js/data/links.js"></script>
   <script src="js/models/app.js"></script>
   <script src="js/views/landing.js"></script>
   <script src="js/views/mainView.js"></script>
