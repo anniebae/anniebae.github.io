@@ -39,6 +39,12 @@ var overlayTrigger = function() {
   closeBttn.addEventListener( 'click', toggleOverlay );
 }
 
+$(function() {
+  $(window).load(function() {
+    $('#preloader').delay(500).fadeOut();
+    $('.preloader').delay(600).fadeOut('slow');
+  });
+});
 
 new WOW().init();
 new MainView();
