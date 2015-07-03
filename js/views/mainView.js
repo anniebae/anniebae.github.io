@@ -1,6 +1,5 @@
 var MainView = Backbone.View.extend({
   el: "#body",
-  mainTemplate: _.template($('#landing-template').html()),
   projectTemplate: _.template($('#project-template').html()),
   photographyTemplate: _.template($('#photography-template').html()),
   resumeTemplate: _.template($('#resume-template').html()),
@@ -19,7 +18,7 @@ var MainView = Backbone.View.extend({
     'mouseover .contact-icon' : 'showText'
   },
   render: function(){
-    this.$el.html(this.mainTemplate());
+    var landing = new Landing();
   },
   showProjects: function() {
     this.$el.html(this.projectTemplate());

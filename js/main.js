@@ -1,3 +1,5 @@
+new WOW().init();
+
 var overlayTrigger = function() {
   var triggerBttn = document.getElementById( 'trigger-overlay' ),
       overlay = document.querySelector( 'div.overlay' ),
@@ -46,5 +48,4 @@ $(function() {
   });
 });
 
-new WOW().init();
-new MainView();
+var mainView = new MainView();

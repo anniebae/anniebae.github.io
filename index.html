@@ -24,15 +24,12 @@
 
 <div id="body"></div>
 
-<script type="text/template" id="landing-template">
+<script type="text/template" id="landing-container-template">
   <div class="landing-page">
     <ul class="cb-slideshow">
-      <li><span><img src="./images/backdrop1.jpg" class="slide-img"></span></li>
-      <li><span><img src="./images/backdrop2.jpg" class="slide-img"></span></li>
-      <li><span><img src="./images/backdrop3.jpg" class="slide-img"></span></li>
-      <li><span><img src="./images/backdrop4.jpg" class="slide-img"></span></li>
-      <li><span><img src="./images/backdrop5.jpg" class="slide-img"></span></li>
-      <li><span><img src="./images/backdrop6.jpg" class="slide-img"></span></li>
+
+      <!-- Backdrop Models -->
+
     </ul>
     <div class="black-cover">
     </div>
@@ -53,29 +50,34 @@
         </ul>
         </nav>
       </div>
-    <div class="social-media-wrapper">
-      <ul id="social-media-ul">
-        <li><a href="http://abaebae.blogspot.com/" target="_blank">
-          <img src="images/social_media/blogger-white.png" class="social-media-icon">
-        </a></li>
-        <li><a href="https://twitter.com/bae_annie" target="_blank">
-          <img src="images/social_media/twitter-white.png" class="social-media-icon">
-        </a></li>
-        <li><a href="http://a-baebae.tumblr.com/" target="_blank">
-          <img src="images/social_media/tumblr-white.png" class="social-media-icon">
-        </a></li>
-        <li><a href="https://www.facebook.com/bae.annie" target="_blank">
-          <img src="images/social_media/facebook-white.png" class="social-media-icon">
-        </a></li>
-        <li><a href="http://instagram.com/anniebae" target="_blank">
-          <img src="images/social_media/instagram-white.png" class="social-media-icon">
-        </a></li>
-      </ul>
+      <div class="social-media-wrapper">
+        <ul id="social-media-ul">
+          <li><a href="http://abaebae.blogspot.com/" target="_blank">
+            <img src="images/social_media/blogger-white.png" class="social-media-icon">
+          </a></li>
+          <li><a href="https://twitter.com/bae_annie" target="_blank">
+            <img src="images/social_media/twitter-white.png" class="social-media-icon">
+          </a></li>
+          <li><a href="http://a-baebae.tumblr.com/" target="_blank">
+            <img src="images/social_media/tumblr-white.png" class="social-media-icon">
+          </a></li>
+          <li><a href="https://www.facebook.com/bae.annie" target="_blank">
+            <img src="images/social_media/facebook-white.png" class="social-media-icon">
+          </a></li>
+          <li><a href="http://instagram.com/anniebae" target="_blank">
+            <img src="images/social_media/instagram-white.png" class="social-media-icon">
+          </a></li>
+        </ul>
+      </div>
     </div>
-    </div>
-
   </div>
 </script>
+
+<script type="text/template" id="landing-item-template">
+  <li><span><img src="<%= name %>" class="slide-img"></span></li>
+</script>
+
+
   
 <script type="text/template" id="project-template">
   <div id="project-wrapper">
@@ -312,6 +314,10 @@
   <script src="js/lib/classie.js"></script>
   <script src="js/lib/wow.js"></script>
   <script src="js/lib/wallopSlider.js"></script>
+  <!-- Assets -->
+  <script src="js/data/backdrops.js"></script>
+  <script src="js/models/app.js"></script>
+  <script src="js/views/landing.js"></script>
   <script src="js/views/mainView.js"></script>
   <script src="js/main.js"></script>
 </body>
