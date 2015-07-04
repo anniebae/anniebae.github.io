@@ -13,7 +13,6 @@ var overlayTrigger = function() {
       },
       transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
       support = { transitions : Modernizr.csstransitions };
-
   function toggleOverlay() {
       if( classie.has( overlay, 'open' ) ) {
           classie.remove( overlay, 'open' );
@@ -36,7 +35,6 @@ var overlayTrigger = function() {
           classie.add( overlay, 'open' );
       }
   }
-
   triggerBttn.addEventListener( 'click', toggleOverlay );
   closeBttn.addEventListener( 'click', toggleOverlay );
 }
