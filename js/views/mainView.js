@@ -13,7 +13,7 @@ var MainView = Backbone.View.extend({
     'mouseover .project-div'  : 'showCaption',
     'click #btn-photography'  : 'showPhotography',
     'click #btn-resume'       : 'showResume',
-    'click #btn-contact'      : 'showContact'
+    'click #btn-contact'      : 'showContact',
   },
   render: function(){
     var landing = new Landing();
