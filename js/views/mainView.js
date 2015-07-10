@@ -12,8 +12,8 @@ var MainView = Backbone.View.extend({
     'click #btn-projects'     : 'showProjects',
     'mouseover .project-div'  : 'showCaption',
     'click #btn-photography'  : 'showPhotography',
-    'click #btn-resume'       : 'showResume',
     'click #btn-contact'      : 'showContact',
+    'click #btn-resume'       : 'showResume'
   },
   render: function(){
     var landing = new Landing();
@@ -44,5 +44,6 @@ var MainView = Backbone.View.extend({
   },
   showContact: function() {
     var contact = new Contact();
+    overlayTrigger();
   },
  });

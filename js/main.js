@@ -44,9 +44,6 @@ $(function() {
     $('#preloader').delay(500).fadeOut();
     $('.preloader').delay(600).fadeOut('slow');
   });
-  $('.button-overlay').click(function() {
-    console.log('trigger clicked');
-  });
 });
 
 var mainView = new MainView();
