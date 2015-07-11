@@ -354,9 +354,9 @@ section  button {
   margin-bottom: -45px;
   border-radius:100%;
   -webkit-animation: rotation 0.750s infinite linear;
-      -moz-animation: rotation 0.750s infinite linear;
-        -o-animation: rotation 0.750s infinite linear;
-           animation: rotation 0.750s infinite linear;
+  -moz-animation: rotation 0.750s infinite linear;
+  -o-animation: rotation 0.750s infinite linear;
+  animation: rotation 0.750s infinite linear;
 }
 
 #carousel-spinner:before,
