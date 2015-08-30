@@ -122,7 +122,7 @@ section  button {
 
 .project-wrapper {
   position: relative;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
 }
 
 .project-block {
@@ -171,6 +171,11 @@ section  button {
 .project-img {
   width: 100%;
   height: 300px;
+  opacity: .7;
+}
+
+.project-img:hover {
+  opacity: 1;
 }
 
 .wallop-slider--fold .wallop-slider__list {
