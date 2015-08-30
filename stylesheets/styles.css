@@ -120,6 +120,10 @@ section  button {
   width: 100vw;
 }
 
+.mobile-view {
+  display: none;
+}
+
 .project-wrapper {
   position: relative;
   border: 1px solid #ccc;
@@ -165,7 +169,7 @@ section  button {
 }
 
 .project-grid {
-  padding: 5%;
+  padding: 10%;
 }
 
 .project-desc p {
@@ -311,6 +315,14 @@ button.project-btn:hover {
   }
   .btn {
     font-size: 8.5px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
   }
 }
 
