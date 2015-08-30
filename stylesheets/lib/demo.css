@@ -23,13 +23,13 @@ body {
 }
 
 a {
-	color: #99cc33;
+	/*color: #99cc33;*/
 	text-decoration: none;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #373e18;
+	/*color: #373e18;*/
 }
 
 .codrops-header {

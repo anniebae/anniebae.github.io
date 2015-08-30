@@ -164,6 +164,40 @@ section  button {
   color: #000;
 }
 
+.project-grid {
+  padding: 5%;
+}
+
+.project-desc p {
+  color: #000;
+}
+
+button.project-btn {
+  padding: 2% 5%;
+  border: 1px solid #8a8c7e;
+  background: transparent;
+  color: #8a8c7e;
+}
+
+button.project-btn:hover {
+  background-color: #8a8c7e;
+  color: #fff;
+}
+
+/*a.project-link {
+  color: #8a8c7e;
+}
+
+a.project-link:hover {
+  color: #fff;
+}*/
+
+
+.project-desc {
+  padding: 20%;
+  text-align: center;
+}
+
 .project-container {
   padding: 0px;
 }
