@@ -1,0 +1,38 @@
+body {
+  margin: 0; }
+  body header {
+    margin: 55px 0px 25px 0px;
+    text-align: center; }
+  body .slideshow {
+    max-width: 740px;
+    max-height: 495px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: none; }
+    body .slideshow img {
+      width: 100%;
+      max-height: 495px;
+      top: 0;
+      left: 0; }
+  body .menu {
+    text-align: center;
+    margin: 35px; }
+    body .menu ul {
+      list-style-type: none; }
+      body .menu ul li {
+        font-size: 17px;
+        display: inline-block;
+        color: #999999;
+        margin: 0px 10px 0px 10px;
+        font-weight: 400;
+        letter-spacing: 2px; }
+        body .menu ul li:hover {
+          color: #cce5ff; }
+  body .copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15px; }
+
+/*# sourceMappingURL=styles.css.map */
