@@ -3,6 +3,10 @@ body {
   body header {
     margin: 55px 0px 25px 0px;
     text-align: center; }
+    body header h1 {
+      font-family: 'Montserrat', sans-serif; }
+      body header h1:hover {
+        color: #cce5ff; }
   body .slideshow {
     max-width: 740px;
     max-height: 550px;
@@ -19,35 +23,26 @@ body {
     text-align: center;
     margin-top: 35px; }
     body .social ul {
-      list-style-type: none; }
+      list-style-type: none;
+      padding: 0; }
       body .social ul li {
         display: inline-block;
         margin: 0px 10px 0px 10px; }
         body .social ul li img {
-          width: 40px; }
+          width: 40px;
+          transition: .5s ease-in-out; }
+          body .social ul li img:hover {
+            transform: scale(1.2); }
   body .email {
     text-align: center;
     font-weight: 300;
-    color: #000; }
+    color: #000;
+    letter-spacing: 1px; }
     body .email a {
       color: #000; }
       body .email a:hover {
         text-decoration: none;
         color: #cce5ff; }
-  body .menu {
-    text-align: center;
-    margin: 35px; }
-    body .menu ul {
-      list-style-type: none; }
-      body .menu ul li {
-        font-size: 17px;
-        display: inline-block;
-        color: #999999;
-        margin: 0px 10px 0px 10px;
-        font-weight: 400;
-        letter-spacing: 2px; }
-        body .menu ul li:hover {
-          color: #cce5ff; }
   body .copyright {
     position: fixed;
     bottom: 0;
