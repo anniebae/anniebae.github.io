@@ -4,7 +4,7 @@ $(function() {
   // $('.bxslider').bxSlider();
 
 
-$('.slideshow').cycle({ 
+  $('.slideshow').cycle({ 
     fx:    'fade', 
     speed:  1000 
   });
