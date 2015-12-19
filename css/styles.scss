@@ -88,6 +88,7 @@ body {
       padding: 0;  
       margin:  0 auto;  
       height: none;
+      z-index: -1;
 
       img { 
         width:  100%;
@@ -150,36 +151,52 @@ body {
     }
   }
 
-  // .menu {
-    
-  //   text-align: center;
-  //   margin: 35px;
-
-  //   ul {
-
-  //     list-style-type: none;
-
-  //     li {
-
-  //       font-size: 17px;
-  //       display: inline-block;
-  //       color: #999999;
-  //       margin: 0px 10px 0px 10px;
-  //       font-weight: 400;
-  //       letter-spacing: 2px;
-
-  //       &:hover {
-  //         color: #cce5ff;
-  //       }
-  //     }
-  //   }
-  // }
-
   .copyright {
     position: fixed;
     bottom: 0;
     right: 0;
     padding: 15px;
   }
+
+  
+
+
+  .about-wrapper {
+
+
+    .hero {
+
+      background: #000;
+      height: 475px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+
+      p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        padding: 150px 0px;
+        letter-spacing: 3px;
+      }
+    }
+
+    .hello {
+      
+      font-size: 50px;
+      margin-top: 475px;
+
+    }
+    
+  }
+
+
+    
+  
+
+
 
 }

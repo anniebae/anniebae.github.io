@@ -23,7 +23,7 @@ body {
 }
 
 a {
-	color: #99cc33;
+	/*color: #99cc33;*/
 	text-decoration: none;
 	outline: none;
 }
@@ -140,12 +140,12 @@ section button {
 }
 
 .related > a {
-	border: 1px solid #99cc33;
+	/*border: 1px solid #99cc33;*/
 	display: inline-block;
 	text-align: center;
 	margin: 20px 10px;
 	padding: 25px;
-	color: #99cc33;
+	/*color: #99cc33;*/
 	opacity: 0.8;
 	-webkit-transition: color 0.3s, border-color 0.3s;
 	transition: color 0.3s, border-color 0.3s;
