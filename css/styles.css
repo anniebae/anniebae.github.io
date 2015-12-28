@@ -121,7 +121,23 @@ html {
       width: 100%;
       position: relative;
       background: #fff;
-      padding: 0 15%;
-      height: 820px; }
+      height: 820px;
+      padding: 5%; }
+      html body .work-wrapper .work .row .col-md-4, html body .work-wrapper .work .row .col-sm-4 {
+        text-align: center; }
+        html body .work-wrapper .work .row .col-md-4 img.work-img, html body .work-wrapper .work .row .col-sm-4 img.work-img {
+          width: 300px;
+          height: 300px;
+          border: 25px solid #ccc;
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          filter: grayscale(100%);
+          -webkit-transition: .5s ease-in-out;
+          -moz-transition: .5s ease-in-out;
+          transition: .5s ease-in-out; }
+          html body .work-wrapper .work .row .col-md-4 img.work-img:hover, html body .work-wrapper .work .row .col-sm-4 img.work-img:hover {
+            -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
+            filter: grayscale(0); }
 
 /*# sourceMappingURL=styles.css.map */

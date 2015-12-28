@@ -235,10 +235,39 @@ html {
         width: 100%;
         position: relative;
         background: #fff;
-        padding: 0 15%;
         height: 820px;
+        padding: 5%;
 
+        .row {
 
+          .col-md-4, .col-sm-4 {
+
+            text-align: center;
+
+            img.work-img {
+
+              width: 300px;
+              height: 300px;
+              border: 25px solid #ccc;
+              -webkit-filter: grayscale(100%);
+              -moz-filter: grayscale(100%);
+              filter: grayscale(100%);
+
+              -webkit-transition: .5s ease-in-out;
+              -moz-transition: .5s ease-in-out;
+              transition: .5s ease-in-out;
+
+              &:hover {
+                -webkit-filter: grayscale(0);
+                -moz-filter: grayscale(0);
+                filter: grayscale(0);
+                
+              }
+            }
+          }
+
+          
+        }
       }
       
     }
