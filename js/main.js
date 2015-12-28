@@ -6,7 +6,7 @@ $(function() {
 
   $('.slideshow').cycle({ 
     fx:    'fade', 
-    speed:  5000 
+    speed:  3000 
   });
 
 
