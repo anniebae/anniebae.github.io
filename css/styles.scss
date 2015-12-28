@@ -8,6 +8,7 @@ html {
   body {
 
     margin: 0;
+    font-family: 'Lato', 'Avenir Next', Arial, sans-serif;
 
     .container {
 
@@ -174,7 +175,7 @@ html {
       .hero {
 
         background: #000;
-        height: 475px;
+        height: 450px;
         position: fixed;
         width: 100%;
 
@@ -192,11 +193,51 @@ html {
 
       .hello {
         
-        font-size: 50px;
+        font-size: 30px;
         top: 475px;
         width: 100%;
         position: relative;
         background: #fff;
+        padding: 0 15%;
+        height: 820px;
+
+
+      }
+      
+    }
+
+    .work-wrapper {
+
+
+      .hero {
+
+        background: #000;
+        height: 450px;
+        position: fixed;
+        width: 100%;
+
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 50px;
+          font-weight: 100;
+          margin: 0;
+          color: #fff;
+          text-align: center;
+          padding: 150px 0px;
+          letter-spacing: 3px;
+        }
+      }
+
+      .work {
+        
+        font-size: 30px;
+        top: 475px;
+        width: 100%;
+        position: relative;
+        background: #fff;
+        padding: 0 15%;
+        height: 820px;
+
 
       }
       

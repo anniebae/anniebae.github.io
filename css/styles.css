@@ -2,7 +2,8 @@ html {
   height: 100%;
   width: 100%; }
   html body {
-    margin: 0; }
+    margin: 0;
+    font-family: 'Lato', 'Avenir Next', Arial, sans-serif; }
     html body .container section {
       padding: initial; }
       html body .container section p {
@@ -80,7 +81,7 @@ html {
       padding: 15px; }
     html body .about-wrapper .hero {
       background: #000;
-      height: 475px;
+      height: 450px;
       position: fixed;
       width: 100%; }
       html body .about-wrapper .hero p {
@@ -93,10 +94,34 @@ html {
         padding: 150px 0px;
         letter-spacing: 3px; }
     html body .about-wrapper .hello {
-      font-size: 50px;
+      font-size: 30px;
       top: 475px;
       width: 100%;
       position: relative;
-      background: #fff; }
+      background: #fff;
+      padding: 0 15%;
+      height: 820px; }
+    html body .work-wrapper .hero {
+      background: #000;
+      height: 450px;
+      position: fixed;
+      width: 100%; }
+      html body .work-wrapper .hero p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        padding: 150px 0px;
+        letter-spacing: 3px; }
+    html body .work-wrapper .work {
+      font-size: 30px;
+      top: 475px;
+      width: 100%;
+      position: relative;
+      background: #fff;
+      padding: 0 15%;
+      height: 820px; }
 
 /*# sourceMappingURL=styles.css.map */
