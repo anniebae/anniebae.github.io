@@ -171,6 +171,16 @@ html {
 
     .about-wrapper {
 
+      .container {
+
+        section p #trigger-overlay {
+
+          -webkit-filter: invert(100%);
+          z-index: 5;
+        
+        }
+      }
+
 
       .hero {
 
@@ -200,6 +210,30 @@ html {
         background: #fff;
         padding: 0 15%;
         height: 820px;
+        color: #000;
+        font-family: 'Lato', 'Avenir Next', Arial, sans-serif;
+
+        .part {
+
+          .part-title {
+
+            font-family: 'Open Sans Condensed', sans-serif;
+            color: #bfbfbf;
+            position: relative;            
+          }
+
+          .part-title::after {
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            height: 1.5px;
+            background: #bfbfbf;
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, #bfbfbf), color-stop(50%, #e6e6e6), color-stop(100%, hsla(0, 0%, 0%, 0)));
+
+          }
+        }
 
 
       }
@@ -207,6 +241,16 @@ html {
     }
 
     .work-wrapper {
+
+      .container {
+
+        section p #trigger-overlay {
+
+          -webkit-filter: invert(100%);
+          z-index: 5;
+        
+        }
+      }
 
 
       .hero {
