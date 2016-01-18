@@ -1,14 +1,13 @@
 console.log('hello world');
 
 $(function() {
-  // $('.bxslider').bxSlider();
-
 
   $('.slideshow').cycle({ 
     fx:    'fade', 
     speed:  3000 
   });
 
+  var gallery = $('.gallery a').simpleLightbox();
 
 
 });
