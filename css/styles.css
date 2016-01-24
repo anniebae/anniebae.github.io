@@ -26,6 +26,8 @@ html {
             color: #fff;
             background: #cce5ff;
             text-decoration: none; }
+    html body .overlay nav {
+      top: 60%; }
     html body .overlay-hugeinc.open {
       z-index: 9; }
     html body header {
@@ -48,6 +50,7 @@ html {
       html body .slideshow img {
         width: 100%;
         height: 557px;
+        object-fit: cover;
         top: 0;
         left: 0; }
     html body .social {
@@ -94,20 +97,24 @@ html {
         margin: 0;
         color: #fff;
         text-align: center;
-        padding: 150px 0px;
-        letter-spacing: 3px; }
+        padding: 180px 0px;
+        letter-spacing: 3px;
+        line-height: 25px; }
+        html body .about-wrapper .hero p span {
+          font-size: 10px; }
     html body .about-wrapper .hello {
-      font-size: 30px;
+      font-size: 22px;
       top: 475px;
       width: 100%;
       position: absolute;
       background: #fff;
-      padding: 0 15%;
+      padding: 0 28%;
       height: 820px;
       color: #000;
-      font-family: 'Lato', 'Avenir Next', Arial, sans-serif; }
+      font-family: 'Open Sans Condensed', sans-serif; }
       html body .about-wrapper .hello .part .part-title {
         font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 30px;
         color: #bfbfbf;
         position: relative; }
       html body .about-wrapper .hello .part .part-title::after {
@@ -122,6 +129,8 @@ html {
     html body .work-wrapper .container section p #trigger-overlay {
       -webkit-filter: invert(100%);
       z-index: 5; }
+    html body .work-wrapper .overlay nav {
+      top: 60%; }
     html body .work-wrapper .hero {
       background: #000;
       height: 450px;
@@ -134,8 +143,11 @@ html {
         margin: 0;
         color: #fff;
         text-align: center;
-        padding: 150px 0px;
-        letter-spacing: 3px; }
+        padding: 180px 0px;
+        letter-spacing: 3px;
+        line-height: 25px; }
+        html body .work-wrapper .hero p span {
+          font-size: 10px; }
     html body .work-wrapper .work {
       font-size: 30px;
       top: 475px;
@@ -160,8 +172,10 @@ html {
             -webkit-filter: grayscale(0);
             -moz-filter: grayscale(0);
             filter: grayscale(0); }
+    html body .sl-wrapper {
+      color: #fff; }
     html body .sl-overlay {
-      background: #000;
+      background: #262626;
       opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
