@@ -217,36 +217,42 @@ html {
 
       .hello {
         
-        font-size: 22px;
         top: 475px;
         width: 100%;
         position: absolute;
         background: #fff;
-        padding: 0 28%;
-        height: 820px;
+        padding: 5% 33%;
+        // height: 820px;
         color: #000;
-        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Times New Roman', sans-serif;
 
         .part {
 
+          margin-bottom: 3%;
+
           .part-title {
 
-            font-family: 'Open Sans Condensed', sans-serif;
-            font-size: 30px;
-            color: #bfbfbf;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #000;
             position: relative;            
           }
 
-          .part-title::after {
-            content: '';
-            width: 100%;
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-            height: 1.5px;
-            background: #bfbfbf;
-            background: -webkit-gradient(linear, left top, right top, color-stop(0%, #bfbfbf), color-stop(50%, #e6e6e6), color-stop(100%, hsla(0, 0%, 0%, 0)));
+          // .part-title::after {
+          //   content: '';
+          //   width: 100%;
+          //   position: absolute;
+          //   left: 0;
+          //   bottom: -1px;
+          //   height: 1.5px;
+          //   background: #bfbfbf;
+          //   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #000), color-stop(50%, #e6e6e6), color-stop(100%, hsla(0, 0%, 0%, 0)));
 
+          // }
+
+          .part-desc {
+              line-height: 28px;
+              font-size: 15px;
           }
         }
 
@@ -356,4 +362,57 @@ html {
 
   }
 
+}
+
+
+@media only screen and (max-width: 967px) {
+
+  html {
+
+    body {
+
+      .copyright {
+
+        position: initial;
+        text-align: center;
+        padding: 12% 0 3% 0;
+
+      }
+
+      .about-wrapper {
+
+        .hello {
+
+          padding: 5% 25%;
+
+        }
+      }
+    }
+    
+  }
+}
+
+@media only screen and (max-width: 736px) {
+
+  html {
+
+    body {
+
+      .about-wrapper {
+
+        .hello {
+
+          padding: 5% 18%;
+
+          .part .part-desc b {
+
+            display: block;
+            
+          }
+
+        }
+      }
+    }
+    
+  }
 }

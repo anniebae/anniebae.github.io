@@ -103,29 +103,23 @@ html {
         html body .about-wrapper .hero p span {
           font-size: 10px; }
     html body .about-wrapper .hello {
-      font-size: 22px;
       top: 475px;
       width: 100%;
       position: absolute;
       background: #fff;
-      padding: 0 28%;
-      height: 820px;
+      padding: 5% 33%;
       color: #000;
-      font-family: 'Open Sans Condensed', sans-serif; }
-      html body .about-wrapper .hello .part .part-title {
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 30px;
-        color: #bfbfbf;
-        position: relative; }
-      html body .about-wrapper .hello .part .part-title::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: -1px;
-        height: 1.5px;
-        background: #bfbfbf;
-        background: -webkit-gradient(linear, left top, right top, color-stop(0%, #bfbfbf), color-stop(50%, #e6e6e6), color-stop(100%, transparent)); }
+      font-family: 'Times New Roman', sans-serif; }
+      html body .about-wrapper .hello .part {
+        margin-bottom: 3%; }
+        html body .about-wrapper .hello .part .part-title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          color: #000;
+          position: relative; }
+        html body .about-wrapper .hello .part .part-desc {
+          line-height: 28px;
+          font-size: 15px; }
     html body .work-wrapper .container section p #trigger-overlay {
       -webkit-filter: invert(100%);
       z-index: 5; }
@@ -177,5 +171,18 @@ html {
     html body .sl-overlay {
       background: #262626;
       opacity: 1; }
+
+@media only screen and (max-width: 967px) {
+  html body .copyright {
+    position: initial;
+    text-align: center;
+    padding: 12% 0 3% 0; }
+  html body .about-wrapper .hello {
+    padding: 5% 25%; } }
+@media only screen and (max-width: 736px) {
+  html body .about-wrapper .hello {
+    padding: 5% 18%; }
+    html body .about-wrapper .hello .part .part-desc b {
+      display: block; } }
 
 /*# sourceMappingURL=styles.css.map */
