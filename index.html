@@ -9,73 +9,244 @@
   <link rel="stylesheet" href="css/lib/normalize.css">
   <link rel="stylesheet" href="css/lib/demo.css">
   <link rel="stylesheet" href="css/lib/style1.css">
+  <link rel="stylesheet" href="css/lib/animate.css">
+  <link rel="stylesheet" href="css/lib/simplelightbox.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <script src="js/lib/modernizr.custom.js"></script>
 </head>
 <body>
 
+<div id="body"></div>
 
-  <div class="container">
-    <!-- Top Navigation -->
-    <section>
-      <p>
-        <button id="trigger-overlay" type="button">
-        </button>
-      </p>
-    </section>
-  </div><!-- /container -->
+  <script type="text/template" id="home-template">
+    <div class="container">
+      <!-- Top Navigation -->
+      <section>
+        <p>
+          <button id="trigger-overlay" type="button">
+          </button>
+        </p>
+      </section>
+    </div><!-- /container -->
 
-  <!-- open/close -->
-  <div class="overlay overlay-hugeinc">
-    <button type="button" class="overlay-close">Close</button>
-    <nav>
+    <!-- open/close -->
+    <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a href="#" id="btn-home">Home</a></li>
+          <li><a href="#" id="btn-about">About</a></li>
+          <li><a href="#" id="btn-work">Work</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <header>
+      <span class="header-name">ANNIE BAE</span>
+    </header>
+
+    <div class="slideshow">
+      <img src="images/slide1.jpg" alt="ab1">
+      <img src="images/slide2.jpg" alt="ab2">
+      <img src="images/slide3.jpg" alt="ab3">
+      <img src="images/slide4.jpg" alt="ab4">
+    </div>
+
+    <div class="social">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/anniebae" target="_blank"><img src="images/linkedin.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://github.com/anniebae" target="_blank"><img src="images/github.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bae_annie" target="_blank"><img src="images/twitter.png" alt=""></a>
+        </li>
       </ul>
-    </nav>
-  </div>
+    </div>
 
+    <p class="email">
+      <a href="mailto:bae.annie@gmail.com?subject=Hiya&body=Hey Annie! I stumbled upon your website and wanted to say hello :)">
+        bae[dot]annie[at]gmail[dot]com
+      </a>
+    </p>
 
-  
-  <header>
-    <span class="header-name">ANNIE BAE</span>
-  </header>
+    <div class="copyright">
+      <span>&copy; 2016 anniebae</span>
+    </div>
+  </script>
 
+  <script type="text/template" id="about-template">
+    <div class="about-wrapper">
+      <div class="container">
+        <!-- Top Navigation -->
+        <section>
+          <p>
+            <button id="trigger-overlay" type="button">
+            </button>
+          </p>
+        </section>
+      </div><!-- /container -->
 
-  <div class="slideshow">
-    <img src="images/slide1.jpg" alt="ab1">
-    <img src="images/slide2.jpg" alt="ab2">
-    <img src="images/slide3.jpg" alt="ab3">
-    <img src="images/slide4.jpg" alt="ab4">
-  </div>
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+          <ul>
+            <li><a href="#" id="btn-home">Home</a></li>
+            <li><a href="#" id="btn-about">About</a></li>
+            <li><a href="#" id="btn-work">Work</a></li>
+          </ul>
+        </nav>
+      </div>
 
+      <div class="hero">
+        <p class="animated fadeInUp">ABOUT <br>
+          <span>INFJ | CAPRICORN | WEB DEVELOPER</span>
+        </p>
+      </div>
+      
+      <div class="hello">
+        <div class="part">
+          <div class="part-title">Currently</div>
+          <div class="part-desc">
+            New York City-based developer working at Tenthwave Digital LLC.      
+          </div>
+        </div>
+        <br>
+        <div class="part">
+          <div class="part-title">In a nutshell</div>
+          <div class="part-desc">
+            Alumna of Rutgers University (Communications & Digital Media) and General Assembly (Web Development Immersive). My interest in coding developed from working in the fashion industry, to creating ecommerce content, which eventually lead to building beautiful websites.
+          </div>
+        </div>
+        <br>
+        <div class="part">
+          <div class="part-title">Things I like</div>
+          <div class="part-desc">
+            Hobbies include photography, running, people-watching, pestering my cat, and kicking it with strangers' dogs.
+          </div>
+        </div>
+        <br>
+        <div class="part">
+          <div class="part-title">Stack</div>
+          <div class="part-desc">
+            <b>languages: </b> JavaScript, HTML5/CSS3, SASS <br>
+            <b>libraries: </b> jQuery, Underscore <br>
+            <b>frameworks: </b> Backbone, Angular <br>
+            <b>tools: </b> BrowserStack, Litmus, MAMP, SourceTree, Transmit, Photoshop, FogBugz <br>
+            <b>other: </b> Git, SVN, RWD/UI, Cross Browser Testing, Mobile Testing
+          </div>
+        </div>
+        <br>
+      </div> 
+    </div>
+  </script>
 
-  <div class="social">
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/anniebae" target="_blank"><img src="images/linkedin.png" alt=""></a>
-      </li>
-      <li>
-        <a href="https://github.com/anniebae" target="_blank"><img src="images/github.png" alt=""></a>
-      </li>
-      <li>
-        <a href="https://twitter.com/bae_annie" target="_blank"><img src="images/twitter.png" alt=""></a>
-      </li>
-    </ul>
-  </div>
+  <script type="text/template" id="work-template">
+    <div class="work-wrapper">
+      <div class="container">
+        <!-- Top Navigation -->
+        <section>
+          <p>
+            <button id="trigger-overlay" type="button">
+            </button>
+          </p>
+        </section>
+      </div><!-- /container -->
 
-  <p class="email">
-    <a href="mailto:bae.annie@gmail.com?subject=Hiya&body=Hey Annie! I stumbled upon your website and wanted to say hello :)">
-      bae[dot]annie[at]gmail[dot]com
-    </a>
-  </p>
+      <!-- open/close -->
+      <div class="overlay overlay-hugeinc">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+          <ul>
+            <li><a href="#" id="btn-home">Home</a></li>
+            <li><a href="#" id="btn-about">About</a></li>
+            <li><a href="#" id="btn-work">Work</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  <div class="copyright">
-    <span>&copy; 2016 anniebae</span>
-  </div>
+      <div class="hero">
+        <p class="animated fadeInUp">WORK <br>
+          <span>2014 - 2016</span>
+        </p>
+      </div>
+      
+      <div class="work">  
+          <div class="col-md-4 col-sm-6" id="1">
+            <img src="images/projects/portfolio.png" class="work-img" alt="">
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="2">
+            <div class="travelography"> 
+              <a href="images/projects/travelography/main.png">
+                <img src="images/projects/travelography/main.png" class="work-img" alt="Travelography">
+              </a>
+              <a href="images/projects/travelography/t1.png"></a>
+              <a href="images/projects/travelography/t2.png"></a>
+              <a href="images/projects/travelography/t3.png"></a>     
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="3">
+            <div class="sub-urbvn"> 
+              <a href="images/projects/suburban/main.png">
+                <img src="images/projects/suburban/main.png" class="work-img" alt="SUB-URBVN">
+              </a>
+              <a href="images/projects/suburban/s1.png"></a>
+              <a href="images/projects/suburban/s2.png"></a>
+              <a href="images/projects/suburban/s3.png"></a>
+              <a href="images/projects/suburban/s4.png"></a>    
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="4">
+            <div class="whiskers"> 
+              <a href="images/projects/whiskers/main.png">
+                <img src="images/projects/whiskers/main.png" class="work-img" alt="Whiskers">
+              </a>
+              <a href="images/projects/whiskers/w1.png"></a>
+              <a href="images/projects/whiskers/w2.png"></a>
+              <a href="images/projects/whiskers/w3.png"></a>    
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="5">
+            <img src="images/projects/whereTo.png" class="work-img" alt="">
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="6">
+            <div class="ix4"> 
+              <a href="images/projects/ix4/main.png">
+                <img src="images/projects/ix4/main.png" class="work-img" alt="Ix4">
+              </a>
+              <a href="images/projects/ix4/i1.png"></a>
+              <a href="images/projects/ix4/i2.png"></a>   
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="7">
+            <img src="images/projects/RESTaurant.png" class="work-img" alt="">
+          </div>
+
+          <div class="col-md-4 col-sm-6" id="8">
+            <div class="hike"> 
+              <a href="images/projects/hike/main.png">
+                <img src="images/projects/hike/main.png" class="work-img" alt="Ix4">
+              </a>
+              <a href="images/projects/hike/h1.png"></a>
+              <a href="images/projects/hike/h2.png"></a>
+              <a href="images/projects/hike/h3.png"></a>
+              <a href="images/projects/hike/h4.png"></a>   
+            </div>
+            <!-- <img src="images/projects/hike.png" class="work-img" alt=""> -->
+          </div>
+      </div>
+    </div>
+  </script>
 
 
 
@@ -85,10 +256,13 @@
 
   
   <script src="js/lib/jquery.min.js"></script>
-  <script src="js/lib/jquery.cycle.all.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/backbone.js"></script>
   <script src="js/lib/classie.js"></script>
   <script src="js/lib/demo1.js"></script>
-  <script src="js/lib/instafeed.min.js"></script>
+  <script src="js/lib/jquery.cycle.all.js"></script>
+  <script src="js/lib/simple-lightbox.min.js"></script>
+  <script src="js/backbone/views/mainView.js"></script>
   <script src="js/main.js"></script>
 
 </body>
