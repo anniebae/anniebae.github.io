@@ -26,12 +26,7 @@ var MainView = Backbone.View.extend({
   showWork: function() {
     this.$el.html(this.workTemplate());
     overlayTrigger();
-    var travelography = $('.travelography a').simpleLightbox();
-    var suburban = $('.sub-urbvn a').simpleLightbox();
-    var whiskers = $('.whiskers a').simpleLightbox();
-    var whereTo = $('.whereTo a').simpleLightbox();
-    var ix4 = $('.ix4 a').simpleLightbox();
-    var hike = $('.hike a').simpleLightbox();
+    workImages();
   }
 
 });

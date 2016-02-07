@@ -49,6 +49,15 @@ var slideshowCycle = function() {
   });
 }
 
+var workImages = function() {
+  var portfolio = $('.portfolio a').simpleLightbox();
+  var travelography = $('.travelography a').simpleLightbox();
+  var suburban = $('.sub-urbvn a').simpleLightbox();
+  var whiskers = $('.whiskers a').simpleLightbox();
+  var whereTo = $('.whereTo a').simpleLightbox();
+  var ix4 = $('.ix4 a').simpleLightbox();
+  var hike = $('.hike a').simpleLightbox();
+}
 
 
 new MainView();
@@ -58,12 +67,7 @@ $(function() {
 
   slideshowCycle();
 
-  var travelography = $('.travelography a').simpleLightbox();
-  var suburban = $('.sub-urbvn a').simpleLightbox();
-  var whiskers = $('.whiskers a').simpleLightbox();
-  var whereTo = $('.whereTo a').simpleLightbox();
-  var ix4 = $('.ix4 a').simpleLightbox();
-  var hike = $('.hike a').simpleLightbox();
+  workImages();
 
 
 
