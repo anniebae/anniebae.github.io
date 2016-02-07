@@ -1,4 +1,4 @@
-new WOW().init();
+console.log('hello world');
 
 var overlayTrigger = function() {
   var triggerBttn = document.getElementById( 'trigger-overlay' ),
@@ -13,6 +13,7 @@ var overlayTrigger = function() {
       },
       transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
       support = { transitions : Modernizr.csstransitions };
+
   function toggleOverlay() {
       if( classie.has( overlay, 'open' ) ) {
           classie.remove( overlay, 'open' );
@@ -35,15 +36,40 @@ var overlayTrigger = function() {
           classie.add( overlay, 'open' );
       }
   }
+
   triggerBttn.addEventListener( 'click', toggleOverlay );
   closeBttn.addEventListener( 'click', toggleOverlay );
 }
 
-$(function() {
-  $(window).load(function() {
-    $('#preloader').delay(500).fadeOut();
-    $('.preloader').delay(600).fadeOut('slow');
-  });
-});
 
-var mainView = new MainView();
+var slideshowCycle = function() {
+  $('.slideshow').cycle({ 
+    fx:    'fade', 
+    speed:  2000 
+  });
+}
+
+var workImages = function() {
+  var portfolio = $('.portfolio a').simpleLightbox();
+  var travelography = $('.travelography a').simpleLightbox();
+  var suburban = $('.sub-urbvn a').simpleLightbox();
+  var whiskers = $('.whiskers a').simpleLightbox();
+  var whereTo = $('.whereTo a').simpleLightbox();
+  var ix4 = $('.ix4 a').simpleLightbox();
+  var restaurant = $('.restaurant a').simpleLightbox();
+  var hike = $('.hike a').simpleLightbox();
+}
+
+
+new MainView();
+
+$(function() {
+
+
+  slideshowCycle();
+
+  workImages();
+
+
+
+});
