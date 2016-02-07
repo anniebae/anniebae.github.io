@@ -42,16 +42,21 @@ var overlayTrigger = function() {
 }
 
 
+var slideshowCycle = function() {
+  $('.slideshow').cycle({ 
+    fx:    'fade', 
+    speed:  2000 
+  });
+}
+
 
 
 new MainView();
 
 $(function() {
 
-  $('.slideshow').cycle({ 
-    fx:    'fade', 
-    speed:  2000 
-  });
+
+  slideshowCycle();
 
   var travelography = $('.travelography a').simpleLightbox();
   var suburban = $('.sub-urbvn a').simpleLightbox();

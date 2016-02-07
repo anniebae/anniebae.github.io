@@ -7,6 +7,7 @@ var MainView = Backbone.View.extend({
   initialize: function() {
     this.render();
     overlayTrigger();
+    slideshowCycle();
   },
   events: {
     'click #btn-home' : 'initialize',
@@ -16,7 +17,6 @@ var MainView = Backbone.View.extend({
 
   render: function() {
     this.$el.html(this.mainTemplate());
-    // overlayTrigger();
   },
 
   showAbout: function() {
@@ -26,6 +26,11 @@ var MainView = Backbone.View.extend({
   showWork: function() {
     this.$el.html(this.workTemplate());
     overlayTrigger();
+    var travelography = $('.travelography a').simpleLightbox();
+    var suburban = $('.sub-urbvn a').simpleLightbox();
+    var whiskers = $('.whiskers a').simpleLightbox();
+    var ix4 = $('.ix4 a').simpleLightbox();
+    var hike = $('.hike a').simpleLightbox();
   }
 
 });

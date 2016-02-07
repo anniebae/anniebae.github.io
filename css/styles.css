@@ -4,6 +4,8 @@ html {
   html body {
     margin: 0;
     font-family: 'Lato', 'Avenir Next', Arial, sans-serif; }
+    html body a {
+      color: #cce5ff; }
     html body .container section {
       padding: initial; }
       html body .container section p {
