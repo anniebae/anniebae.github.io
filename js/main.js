@@ -56,6 +56,7 @@ var workImages = function() {
   var whiskers = $('.whiskers a').simpleLightbox();
   var whereTo = $('.whereTo a').simpleLightbox();
   var ix4 = $('.ix4 a').simpleLightbox();
+  var restaurant = $('.restaurant a').simpleLightbox();
   var hike = $('.hike a').simpleLightbox();
 }
 

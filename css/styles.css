@@ -63,7 +63,7 @@ html {
         padding: 0; }
         html body .social ul li {
           display: inline-block;
-          margin: 0px 10px 0px 10px; }
+          margin: 0px 6px 0px 6px; }
           html body .social ul li img {
             width: 40px;
             transition: .5s ease-in-out; }
