@@ -15,7 +15,7 @@ html {
           float: right;
           position: fixed;
           right: 0;
-          background: url(../images/hamburger.png) no-repeat center center;
+          /*background: url(../images/hamburger.png) no-repeat center center;*/
           background-size: cover;
           margin-top: 18px; }
     html body .overlay {

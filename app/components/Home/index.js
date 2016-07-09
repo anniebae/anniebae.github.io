@@ -1,7 +1,26 @@
 import React, { Component } from 'react';
 import Styles from './styles.scss';
+import {Link} from 'react-router';
+
+const css = {
+  slideshow: { 
+    position: 'relative', 
+    width: '740px', 
+    height: '557px'
+  },
+  img: { 
+    position: 'relative', 
+    top: '0px', 
+    left: '0px',
+    zIndex: 4, 
+    opacity: 0, 
+    width: '740px', 
+    height: '557px' 
+  }
+}
 
 class Home extends Component {
+
   render() {
     return (
       <div id="body">
@@ -17,9 +36,9 @@ class Home extends Component {
           <button type="button" className="overlay-close">Close</button>
           <nav>
             <ul>
-              <li><a href="#" id="btn-home">Home</a></li>
-              <li><a href="#" id="btn-about">About</a></li>
-              <li><a href="#" id="btn-work">Work</a></li>
+              <li><Link to="/" id="btn-home">Home</Link></li>
+              <li><Link to="/about" id="btn-about">About</Link></li>
+              <li><Link to="/work" id="btn-work">Work</Link></li>
             </ul>
           </nav>
         </div>
@@ -28,8 +47,8 @@ class Home extends Component {
           <span className="header-name">ANNIE BAE</span>
         </header>
 
-        <div className="slideshow">
-          <img src="http://placekitten.com/209/293" alt="ab1" />
+        <div className="slideshow" style={css.slideshow}>
+          <img src="http://placekitten.com/209/293" alt="ab1" style={css.img} />
           
         </div>
 
