@@ -48,7 +48,7 @@ class Home extends Component {
         </header>
 
         <div className="slideshow" style={css.slideshow}>
-          <img src="http://placekitten.com/209/293" alt="ab1" style={css.img} />
+          <img src="http://placekitten.com/223/291" alt="ab1" style={css.img} />
           
         </div>
 
