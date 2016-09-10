@@ -37,7 +37,7 @@ class Work extends Component {
 
         <div className="hero">
           <p className="animated fadeInUp">WORK
-            <span>2014 - 2016</span>
+            <div className="hero-sub">2014 - 2016</div>
           </p>
         </div>
         
