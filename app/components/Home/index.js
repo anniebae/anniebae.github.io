@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Styles from './styles.scss';
-import {Link} from 'react-router';
+import {Route, Router, IndexRoute, browserHistory, Link} from 'react-router';
+import {render} from 'react-dom';
+
 
 const css = {
   slideshow: { 
