@@ -26,7 +26,12 @@ class Home extends Component {
   render() {
     return (
       <div id="body">
+  
+
+        {/* container open */}
         <div className="container">
+
+          {/*Top Navigation */}
           <section>
             <p>
               <button id="trigger-overlay" type="button">
@@ -34,6 +39,9 @@ class Home extends Component {
             </p>
           </section>
         </div>
+        {/* container close */}
+
+
         <div className="overlay overlay-hugeinc">
           <button type="button" className="overlay-close">Close</button>
           <nav>

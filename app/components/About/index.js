@@ -10,6 +10,18 @@ class About extends Component {
     return (
 
         <div className="about-wrapper">
+            {/* container open */}
+            <div className="container">
+
+              {/*Top Navigation */}
+              <section>
+                <p>
+                  <button id="trigger-overlay" type="button">
+                  </button>
+                </p>
+              </section>
+            </div>
+            {/* container close */}
 
             <div className="overlay overlay-hugeinc">
               <button type="button" className="overlay-close">Close</button>
@@ -21,6 +33,17 @@ class About extends Component {
                 </ul>
               </nav>
             </div>
+
+
+            <div className="hero">
+              <p className="animated fadeInUp">ABOUT
+                <div className="hero-sub">
+                    WEB DEVELOPER | INFJ | CAPRICORN
+                </div>
+                {/* <span>WEB DEVELOPER | INFJ | CAPRICORN</span> */}
+              </p>
+            </div>
+
             <div className="hello">
               <div className="part">
                 <div className="part-title">Currently</div>

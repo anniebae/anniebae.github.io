@@ -18,6 +18,8 @@
     line-height: 25px; }
     .about-wrapper .hero p span {
       font-size: 10px; }
+    .about-wrapper .hero p .hero-sub {
+      font-size: 10px; }
 .about-wrapper .hello {
   top: 475px;
   width: 100%;

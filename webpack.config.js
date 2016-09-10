@@ -28,6 +28,19 @@ module.exports = {
         test: /\.css$/, 
         exclude: /node_modules/, 
         loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        exclude: /node_modules/,
+            loaders: [
+                'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+            ]
+      },
+      { 
+        test: /\.png$/, 
+        exclude: /node_modules/, 
+        loader: "url-loader?mimetype=image/png" 
       }
     ]
   },

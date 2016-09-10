@@ -28,9 +28,9 @@ class Work extends Component {
           <button type="button" className="overlay-close">Close</button>
           <nav>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Work</a></li>
+              <li><Link to="/" id="btn-home">Home</Link></li>
+              <li><Link to="/about" id="btn-about">About</Link></li>
+              <li><Link to="/work" id="btn-work">Work</Link></li>
             </ul>
           </nav>
         </div>
