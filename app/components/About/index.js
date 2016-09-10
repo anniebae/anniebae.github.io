@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
+import { render } from 'react-dom'
+import {Route, Router, IndexRoute, browserHistory, Link} from 'react-router';
 import Styles from './styles.scss';
+
+
 
 class About extends Component {
   render() {
     return (
+
         <div className="about-wrapper">
 
-
+            <div className="overlay overlay-hugeinc">
+              <button type="button" className="overlay-close">Close</button>
+              <nav>
+                <ul>
+                  <li><Link to="/" id="btn-home">Home</Link></li>
+                  <li><Link to="/about" id="btn-about">About</Link></li>
+                  <li><Link to="/work" id="btn-work">Work</Link></li>
+                </ul>
+              </nav>
+            </div>
             <div className="hello">
               <div className="part">
                 <div className="part-title">Currently</div>
