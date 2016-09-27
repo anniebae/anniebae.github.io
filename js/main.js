@@ -1,83 +1,75 @@
-var owlCarouselTrigger = function() {
-	$(".owl-carousel").owlCarousel({
-		navigation : true, // Show next and prev buttons
-		slideSpeed : 300,
-		paginationSpeed : 400,
-		singleItem:true
-	});
+console.log('hello world');
+
+var overlayTrigger = function() {
+  var triggerBttn = document.getElementById( 'trigger-overlay' ),
+      overlay = document.querySelector( 'div.overlay' ),
+      closeBttn = overlay.querySelector( 'button.overlay-close' );
+      transEndEventNames = {
+          'WebkitTransition': 'webkitTransitionEnd',
+          'MozTransition': 'transitionend',
+          'OTransition': 'oTransitionEnd',
+          'msTransition': 'MSTransitionEnd',
+          'transition': 'transitionend'
+      },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      support = { transitions : Modernizr.csstransitions };
+
+  function toggleOverlay() {
+      if( classie.has( overlay, 'open' ) ) {
+          classie.remove( overlay, 'open' );
+          classie.add( overlay, 'close' );
+          var onEndTransitionFn = function( ev ) {
+              if( support.transitions ) {
+                  if( ev.propertyName !== 'visibility' ) return;
+                  this.removeEventListener( transEndEventName, onEndTransitionFn );
+              }
+              classie.remove( overlay, 'close' );
+          };
+          if( support.transitions ) {
+              overlay.addEventListener( transEndEventName, onEndTransitionFn );
+          }
+          else {
+              onEndTransitionFn();
+          }
+      }
+      else if( !classie.has( overlay, 'close' ) ) {
+          classie.add( overlay, 'open' );
+      }
+  }
+
+  triggerBttn.addEventListener( 'click', toggleOverlay );
+  closeBttn.addEventListener( 'click', toggleOverlay );
 }
 
-new ProjectView();
+
+var slideshowCycle = function() {
+  $('.slideshow').cycle({ 
+    fx:    'fade', 
+    speed:  2000 
+  });
+}
+
+var workImages = function() {
+  var portfolio = $('.portfolio a').simpleLightbox();
+  var travelography = $('.travelography a').simpleLightbox();
+  var suburban = $('.sub-urbvn a').simpleLightbox();
+  var whiskers = $('.whiskers a').simpleLightbox();
+  var whereTo = $('.whereTo a').simpleLightbox();
+  var ix4 = $('.ix4 a').simpleLightbox();
+  var restaurant = $('.restaurant a').simpleLightbox();
+  var hike = $('.hike a').simpleLightbox();
+}
+
+
+new MainView();
 
 $(function() {
 
-// jQuery(document).ready(function($){
 
-	var contentSections = $('.cd-section'),
-		navigationItems = $('#cd-vertical-nav a');
+  slideshowCycle();
 
-	updateNavigation();
-	$(window).on('scroll', function(){
-		updateNavigation();
-	});
+  workImages();
 
-	//smooth scroll to the section
-	navigationItems.on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });
-    //smooth scroll to second section
-    $('.cd-scroll-down').on('click', function(event){
-        event.preventDefault();
-        smoothScroll($(this.hash));
-    });
-
-    //open-close navigation on touch devices
-    $('.touch .cd-nav-trigger').on('click', function(){
-    	$('.touch #cd-vertical-nav').toggleClass('open');
-  
-    });
-    //close navigation on touch devices when selectin an elemnt from the list
-    $('.touch #cd-vertical-nav a').on('click', function(){
-    	$('.touch #cd-vertical-nav').removeClass('open');
-    });
-
-	function updateNavigation() {
-		contentSections.each(function(){
-			$this = $(this);
-			var activeSection = $('#cd-vertical-nav a[href="#'+$this.attr('id')+'"]').data('number') - 1;
-			if ( ( $this.offset().top - $(window).height()/2 < $(window).scrollTop() ) && ( $this.offset().top + $this.height() - $(window).height()/2 > $(window).scrollTop() ) ) {
-				navigationItems.eq(activeSection).addClass('is-selected');
-			}else {
-				navigationItems.eq(activeSection).removeClass('is-selected');
-			}
-		});
-	}
-
-	function smoothScroll(target) {
-        $('body,html').animate(
-        	{'scrollTop':target.offset().top},
-        	600
-        );
-	}
-
-	// var owlCarouselTrigger = function() {
-	// 	$(".owl-carousel").owlCarousel({
-	// 		navigation : true, // Show next and prev buttons
-	// 		slideSpeed : 300,
-	// 		paginationSpeed : 400,
-	// 		singleItem:true
-	// 	});
-	// }
-
-
-
-	// $(".owl-carousel").owlCarousel({
-	// 	navigation : true, // Show next and prev buttons
-	// 	slideSpeed : 300,
-	// 	paginationSpeed : 400,
-	// 	singleItem:true
-	// });
 
 
 });
