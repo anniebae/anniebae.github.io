@@ -1,0 +1,19 @@
+ul#navbar {
+  padding: 0;
+}
+
+ul#navbar li {
+  display: inline-block;
+   list-style-type:none;
+   margin: 0 20px;
+}
+
+ul#navbar li a {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+ul#navbar li a:hover {
+  color: hotpink;
+  transition: all 0.3s ease-in-out;
+}
