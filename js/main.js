@@ -61,23 +61,5 @@ $(function() {
         );
 	}
 
-	// var owlCarouselTrigger = function() {
-	// 	$(".owl-carousel").owlCarousel({
-	// 		navigation : true, // Show next and prev buttons
-	// 		slideSpeed : 300,
-	// 		paginationSpeed : 400,
-	// 		singleItem:true
-	// 	});
-	// }
-
-
-
-	// $(".owl-carousel").owlCarousel({
-	// 	navigation : true, // Show next and prev buttons
-	// 	slideSpeed : 300,
-	// 	paginationSpeed : 400,
-	// 	singleItem:true
-	// });
-
 
 });
