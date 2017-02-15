@@ -23,7 +23,7 @@ class Work extends Component {
 					<div className="project-wrapper">
 						<div className="project-section">
 							<p className="project-name">
-								<a href="http://evault.com/" target="_blank"><img src={imgGH} className="github-icon" alt="" />Evault.</a>
+								<a href="http://evault.com/" target="_blank"><img src={imgGH} className="github-icon" alt="" />EVault.</a>
 							</p>
 							<img src={workEvault} className="project" alt=""/>
 							<p className="framework">Episerver CMS @ Wire Stone</p>
