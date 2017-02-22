@@ -56,6 +56,8 @@ html, body {
 				.title {
 					font-family: Helvetica, Arial;
 					padding: 0 5px;
+					-webkit-writing-mode: tb-rl;
+					-moz-writing-mode: tb-rl;
 					writing-mode: tb-rl;
 					text-orientation: upright;
 					letter-spacing: 8px;
