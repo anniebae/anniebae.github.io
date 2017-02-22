@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import css from './styles.css'
 
+import bnw from '../../img/bnw.png'
+
 class About extends Component {
 	render() {
 		return(

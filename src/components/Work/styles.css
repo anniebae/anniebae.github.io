@@ -56,6 +56,13 @@ img.github-icon {
 	opacity: 0.5;
 }
 
+@media screen and (max-width: 960px) {
+	.work-content .project-wrapper 
+	.project-section img.project {
+		width: 80%;
+	}
+}
+
 @media screen and (max-width: 640px) {
 	.work-content {
 		margin-left: initial;
