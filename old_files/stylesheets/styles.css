@@ -1,0 +1,475 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #3e3947;
+  background-color: #fff; }
+
+body, html {
+  height: 100%; }
+
+a {
+  color: #3e3947;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-section {
+  min-height: 100%;
+  position: relative;
+  padding: 2em 0; }
+  .cd-section:nth-of-type(odd) {
+    background-color: #fff; }
+    .cd-section:nth-of-type(odd) p {
+      color: #696969; }
+  .cd-section:nth-of-type(even) {
+    background-color: #2E3C56; }
+    .cd-section:nth-of-type(even) p {
+      color: #ced5db; }
+  .cd-section h1, .cd-section p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 768px;
+    text-align: center; }
+  .cd-section h1 {
+    color: #696969;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .cd-section p {
+    line-height: 1.6; }
+  .cd-section .hello, .cd-section .about, .cd-section .social, .cd-section .projects {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 768px;
+    text-align: center;
+    /* Show the dropdown menu on hover */
+    /* Change the background color of the dropdown button when the dropdown content is shown */ }
+    .cd-section .hello .name, .cd-section .about .name, .cd-section .social .name, .cd-section .projects .name {
+      font-size: 1.875rem;
+      color: #696969;
+      font-weight: 300;
+      margin-bottom: 8px;
+      text-transform: uppercase; }
+    .cd-section .hello .location, .cd-section .about .location, .cd-section .social .location, .cd-section .projects .location {
+      font-size: 12px;
+      color: #696969;
+      font-weight: 300; }
+      .cd-section .hello .location img, .cd-section .about .location img, .cd-section .social .location img, .cd-section .projects .location img {
+        width: 16px; }
+    .cd-section .hello img.about_img, .cd-section .about img.about_img, .cd-section .social img.about_img, .cd-section .projects img.about_img {
+      border-radius: 70px; }
+    .cd-section .hello div.subtitle, .cd-section .about div.subtitle, .cd-section .social div.subtitle, .cd-section .projects div.subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 100;
+      margin: 10px 0 15px 0;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 3px;
+      line-height: 25px; }
+    .cd-section .hello .part, .cd-section .about .part, .cd-section .social .part, .cd-section .projects .part {
+      color: #fff;
+      text-align: left;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+      .cd-section .hello .part .part-title, .cd-section .about .part .part-title, .cd-section .social .part .part-title, .cd-section .projects .part .part-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 3px; }
+      .cd-section .hello .part .part-desc, .cd-section .about .part .part-desc, .cd-section .social .part .part-desc, .cd-section .projects .part .part-desc {
+        line-height: 28px;
+        font-weight: 100;
+        font-size: 14px; }
+        .cd-section .hello .part .part-desc a, .cd-section .about .part .part-desc a, .cd-section .social .part .part-desc a, .cd-section .projects .part .part-desc a {
+          color: #e9d1b2; }
+          .cd-section .hello .part .part-desc a:hover, .cd-section .about .part .part-desc a:hover, .cd-section .social .part .part-desc a:hover, .cd-section .projects .part .part-desc a:hover {
+            color: #f5f6f7;
+            text-decoration: underline; }
+    .cd-section .hello .dropdown, .cd-section .about .dropdown, .cd-section .social .dropdown, .cd-section .projects .dropdown {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      margin-bottom: 23px; }
+      .cd-section .hello .dropdown .dropbtn, .cd-section .about .dropdown .dropbtn, .cd-section .social .dropdown .dropbtn, .cd-section .projects .dropdown .dropbtn {
+        padding: 12px;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 3px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 1px solid #818a99;
+        color: #fff;
+        background: #818a99; }
+      .cd-section .hello .dropdown .dropdown-content, .cd-section .about .dropdown .dropdown-content, .cd-section .social .dropdown .dropdown-content, .cd-section .projects .dropdown .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid #ccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+        .cd-section .hello .dropdown .dropdown-content ul.project-list li, .cd-section .about .dropdown .dropdown-content ul.project-list li, .cd-section .social .dropdown .dropdown-content ul.project-list li, .cd-section .projects .dropdown .dropdown-content ul.project-list li {
+          line-height: 22px; }
+          .cd-section .hello .dropdown .dropdown-content ul.project-list li button, .cd-section .about .dropdown .dropdown-content ul.project-list li button, .cd-section .social .dropdown .dropdown-content ul.project-list li button, .cd-section .projects .dropdown .dropdown-content ul.project-list li button {
+            color: #818a99;
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            background: none;
+            border: none; }
+            .cd-section .hello .dropdown .dropdown-content ul.project-list li button:hover, .cd-section .about .dropdown .dropdown-content ul.project-list li button:hover, .cd-section .social .dropdown .dropdown-content ul.project-list li button:hover, .cd-section .projects .dropdown .dropdown-content ul.project-list li button:hover {
+              color: #e9d1b2;
+              text-decoration: none; }
+    .cd-section .hello .dropdown:hover .dropdown-content, .cd-section .about .dropdown:hover .dropdown-content, .cd-section .social .dropdown:hover .dropdown-content, .cd-section .projects .dropdown:hover .dropdown-content {
+      display: block; }
+    .cd-section .hello .dropdown:hover .dropbtn, .cd-section .about .dropdown:hover .dropbtn, .cd-section .social .dropdown:hover .dropbtn, .cd-section .projects .dropdown:hover .dropbtn {
+      opacity: 1; }
+    .cd-section .hello #project-carousel, .cd-section .about #project-carousel, .cd-section .social #project-carousel, .cd-section .projects #project-carousel {
+      position: relative; }
+      .cd-section .hello #project-carousel span.github, .cd-section .about #project-carousel span.github, .cd-section .social #project-carousel span.github, .cd-section .projects #project-carousel span.github {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background: #e9d1b2;
+        opacity: 0.9;
+        border-top: 0.5px solid #e6e6e6;
+        border-right: 0.5px solid #e6e6e6; }
+        .cd-section .hello #project-carousel span.github:hover, .cd-section .about #project-carousel span.github:hover, .cd-section .social #project-carousel span.github:hover, .cd-section .projects #project-carousel span.github:hover {
+          opacity: 1; }
+        .cd-section .hello #project-carousel span.github img, .cd-section .about #project-carousel span.github img, .cd-section .social #project-carousel span.github img, .cd-section .projects #project-carousel span.github img {
+          width: 40px; }
+    .cd-section .hello #proj1 .owl-controls .owl-pagination, .cd-section .hello #proj2 .owl-controls .owl-pagination, .cd-section .hello #proj3 .owl-controls .owl-pagination, .cd-section .hello #proj4 .owl-controls .owl-pagination, .cd-section .about #proj1 .owl-controls .owl-pagination, .cd-section .about #proj2 .owl-controls .owl-pagination, .cd-section .about #proj3 .owl-controls .owl-pagination, .cd-section .about #proj4 .owl-controls .owl-pagination, .cd-section .social #proj1 .owl-controls .owl-pagination, .cd-section .social #proj2 .owl-controls .owl-pagination, .cd-section .social #proj3 .owl-controls .owl-pagination, .cd-section .social #proj4 .owl-controls .owl-pagination, .cd-section .projects #proj1 .owl-controls .owl-pagination, .cd-section .projects #proj2 .owl-controls .owl-pagination, .cd-section .projects #proj3 .owl-controls .owl-pagination, .cd-section .projects #proj4 .owl-controls .owl-pagination {
+      display: none; }
+    .cd-section .hello #proj1 .owl-controls .owl-buttons div, .cd-section .hello #proj2 .owl-controls .owl-buttons div, .cd-section .hello #proj3 .owl-controls .owl-buttons div, .cd-section .hello #proj4 .owl-controls .owl-buttons div, .cd-section .about #proj1 .owl-controls .owl-buttons div, .cd-section .about #proj2 .owl-controls .owl-buttons div, .cd-section .about #proj3 .owl-controls .owl-buttons div, .cd-section .about #proj4 .owl-controls .owl-buttons div, .cd-section .social #proj1 .owl-controls .owl-buttons div, .cd-section .social #proj2 .owl-controls .owl-buttons div, .cd-section .social #proj3 .owl-controls .owl-buttons div, .cd-section .social #proj4 .owl-controls .owl-buttons div, .cd-section .projects #proj1 .owl-controls .owl-buttons div, .cd-section .projects #proj2 .owl-controls .owl-buttons div, .cd-section .projects #proj3 .owl-controls .owl-buttons div, .cd-section .projects #proj4 .owl-controls .owl-buttons div {
+      border: 1px solid #818a99;
+      color: #818a99;
+      background: none;
+      border-radius: 0; }
+    .cd-section .hello .owl-carousel img, .cd-section .about .owl-carousel img, .cd-section .social .owl-carousel img, .cd-section .projects .owl-carousel img {
+      width: 768px;
+      height: 423px;
+      border: 1px solid #e6e6e6; }
+    .cd-section .hello ul.social-list, .cd-section .about ul.social-list, .cd-section .social ul.social-list, .cd-section .projects ul.social-list {
+      list-style-type: none; }
+      .cd-section .hello ul.social-list li, .cd-section .about ul.social-list li, .cd-section .social ul.social-list li, .cd-section .projects ul.social-list li {
+        display: inline-block; }
+        .cd-section .hello ul.social-list li a img, .cd-section .about ul.social-list li a img, .cd-section .social ul.social-list li a img, .cd-section .projects ul.social-list li a img {
+          width: 60px;
+          transition: .5s ease-in-out; }
+          .cd-section .hello ul.social-list li a img:hover, .cd-section .about ul.social-list li a img:hover, .cd-section .social ul.social-list li a img:hover, .cd-section .projects ul.social-list li a img:hover {
+            transform: scale(1.1); }
+    .cd-section .hello span.email, .cd-section .about span.email, .cd-section .social span.email, .cd-section .projects span.email {
+      font-size: 12px; }
+      .cd-section .hello span.email a, .cd-section .about span.email a, .cd-section .social span.email a, .cd-section .projects span.email a {
+        color: #fff; }
+        .cd-section .hello span.email a:hover, .cd-section .about span.email a:hover, .cd-section .social span.email a:hover, .cd-section .projects span.email a:hover {
+          color: #e9d1b2; }
+  @media only screen and (min-width: 768px) {
+    .cd-section h1 {
+      font-size: 30px;
+      font-size: 1.875rem; }
+    .cd-section p {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 2; } }
+
+.cd-scroll-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 38px;
+  height: 44px;
+  background: url("../img/cd-arrow-bottom.svg") no-repeat center center; }
+
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none; }
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1; }
+  .no-touch #cd-vertical-nav li {
+    text-align: right; }
+  .no-touch #cd-vertical-nav a {
+    display: inline-block;
+    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    .no-touch #cd-vertical-nav a::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .no-touch #cd-vertical-nav a span {
+      float: right;
+      display: inline-block;
+      -webkit-transform: scale(0.6);
+      -moz-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+      -o-transform: scale(0.6);
+      transform: scale(0.6); }
+    .no-touch #cd-vertical-nav a:hover span {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
+    .no-touch #cd-vertical-nav a:hover .cd-label {
+      opacity: 1; }
+    .no-touch #cd-vertical-nav a.is-selected .cd-dot {
+      background-color: #e9d1b2; }
+  .no-touch #cd-vertical-nav .cd-dot {
+    position: relative;
+    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+    top: 8px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #818a99;
+    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+    transition: transform 0.2s, background-color 0.5s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+  .no-touch #cd-vertical-nav .cd-label {
+    position: relative;
+    margin-right: 10px;
+    padding: .4em .5em;
+    color: #e9d1b2;
+    font-size: 14px;
+    font-size: 0.875rem;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%; }
+
+/* Touch devices */
+.touch .cd-nav-trigger {
+  display: block;
+  z-index: 2;
+  position: fixed;
+  bottom: 30px;
+  right: 5%;
+  height: 44px;
+  width: 44px;
+  border-radius: 0.25em;
+  background: rgba(255, 255, 255, 0.9); }
+  .touch .cd-nav-trigger span {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: #3e3947;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+    .touch .cd-nav-trigger span::before, .touch .cd-nav-trigger span::after {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      background-color: inherit;
+      border-radius: inherit; }
+    .touch .cd-nav-trigger span::before {
+      top: -9px; }
+    .touch .cd-nav-trigger span::after {
+      bottom: -9px; }
+
+.touch #cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+  bottom: 30px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  border-radius: 0.25em;
+  background-color: rgba(245, 245, 245, 0.9); }
+  .touch #cd-vertical-nav a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid rgba(62, 57, 71, 0.1); }
+    .touch #cd-vertical-nav a span:first-child {
+      display: none; }
+    .touch #cd-vertical-nav a.is-selected span:last-child {
+      color: #e9d1b2; }
+  .touch #cd-vertical-nav.open {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  .touch #cd-vertical-nav.open + .cd-nav-trigger {
+    background-color: transparent; }
+    .touch #cd-vertical-nav.open + .cd-nav-trigger span {
+      background-color: rgba(62, 57, 71, 0); }
+    .touch #cd-vertical-nav.open + .cd-nav-trigger span::before, .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+      background-color: #3e3947;
+      height: 3px;
+      width: 20px;
+      border-radius: 0;
+      left: -8px; }
+    .touch #cd-vertical-nav.open + .cd-nav-trigger span::before {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 1px; }
+    .touch #cd-vertical-nav.open + .cd-nav-trigger span::after {
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+      bottom: 0; }
+  .touch #cd-vertical-nav li:last-child a {
+    border-bottom: none; }
+
+@media only screen and (min-width: 768px) {
+  .touch .cd-nav-trigger, .touch #cd-vertical-nav {
+    bottom: 40px; } }
+@media only screen and (max-width: 767px) {
+  .cd-section .about div.subtitle {
+    font-size: 9.5px; }
+  .cd-section .about .row {
+    width: 70%;
+    margin: 0 auto; } }
+@media only screen and (max-width: 620px) {
+  .cd-scroll-down {
+    background-size: 24px; }
+
+  .cd-section .about .row {
+    width: 85%; }
+  .cd-section .about .part .part-desc {
+    line-height: 22px; }
+  .cd-section .projects .dropdown .dropbtn {
+    padding: 9px;
+    font-size: 10px; }
+  .cd-section .projects #project-carousel span.github img {
+    width: 30px; }
+  .cd-section .projects .owl-carousel .owl-wrapper-outer img {
+    object-fit: cover;
+    border: none; }
+  .cd-section .projects #proj1 .owl-controls .owl-buttons div, .cd-section .projects #proj2 .owl-controls .owl-buttons div, .cd-section .projects #proj3 .owl-controls .owl-buttons div, .cd-section .projects #proj4 .owl-controls .owl-buttons div {
+    font-size: 8px; } }
+@media only screen and (max-width: 400px) {
+  .cd-section .about img.about_img {
+    width: 100px; }
+  .cd-section .about div.subtitle {
+    font-size: 8px;
+    margin: 5px 0 10px 0; }
+  .cd-section .about .row {
+    width: 95%; }
+  .cd-section .about .part .part-title {
+    font-size: 12px; }
+  .cd-section .about .part .part-desc {
+    font-size: 11px;
+    line-height: 18px; } }
+
+/*# sourceMappingURL=styles.css.map */
