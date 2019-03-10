@@ -18,7 +18,6 @@ const Banner = styled.div`
     opacity: .7;
   }
 `
-
 const ContactBody = styled.ul`
   list-style-type: none;
   font-size: 14px;
@@ -26,12 +25,9 @@ const ContactBody = styled.ul`
   max-width: 100px;
   margin: auto;
 `
-
-
 const ContactItem = styled.li`
   margin: .5em 0;
 `
-
 const Link = styled.a`
   text-decoration: none;
   color: #537757;
