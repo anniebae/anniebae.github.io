@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import { FaArrowDown, FaGithub } from 'react-icons/fa';
 import { Container } from '../Home'
@@ -125,15 +124,6 @@ const ColItem = styled.p`
   font-size: 14px;
 `
 
-const TypeBold = styled.p`
-  font-weight: 600;
-`
-
-const EduDesc = styled.p`
-  font-weight: 300;
-  font-size: 14px;
-`
-
 const GithubDiv = styled.div`
   position: relative;
   top: 25%;
@@ -252,7 +242,7 @@ class Work extends Component {
 
             <ListGroup>
               <GithubDiv>
-                <a href="https://github.com/anniebae" target="_blank">
+                <a href="https://github.com/anniebae" target="_blank" rel="noopener noreferrer">
                   <FaGithub size={30} color='#000' />
                 </a>
               </GithubDiv>
